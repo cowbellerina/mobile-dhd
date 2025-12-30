@@ -45,8 +45,6 @@ This screen acts as a list of saved gate addresses.
 +------------------------------------------------------+
 |  Status Bar                                          |
 +------------------------------------------------------+
-|  Title: Cartouche                                    |
-+------------------------------------------------------+
 |                                                      |
 |  +------------------------------------------------+  |
 |  |  Jane Doe                                      |  |
@@ -121,39 +119,39 @@ The application's core business logic revolves around the interaction between th
 
 ### 2.6. Reset Functionality
 
-*   **User Action:** A "Reset" button is available on the DHD interface.
-*   **Functionality:** Pressing the Reset button:
-    *   Clears the current dialing sequence (all glyphs are removed from the `Chevrons` model).
+*   **User Action:** An abort/reset button is available on the DHD interface.
+*   **Functionality:** Pressing the reset button:
+    *   Clears the current dialing sequence.
     *   Resets the visual state of all glyph buttons (re-enables them and removes highlights).
     *   Deactivates the Activation Dome.
 
-### 2.4. Re-dial Functionality
+### 2.7. Re-dial Functionality
 
 The Cartouche view supports re-dialing saved addresses with automated glyph entry.
 
 **User Flow:**
-1. User swipes **left** on a cartouche item
-2. Orange "Dial" action appears with phone icon
+1. User swipes left on a cartouche item to reveal the dial action
+2. Dial action appears with phone icon
 3. Tapping navigates to DHD screen
-4. Address auto-dials sequentially (1 glyph per second)
+4. Address auto-dials sequentially with brief delays between glyphs
 5. Each glyph triggers haptic feedback and sound
 6. Chevrons illuminate progressively
-7. Dome activates after 7 glyphs
+7. Dome activates after all 7 glyphs are dialed
 8. User manually presses dome to initiate call
 
-**Technical Implementation:**
-*   State passed via Expo Router URL parameters
-*   Sequential async dialing with 1000ms delays
+**Technical Behavior:**
+*   Address sequence passed via navigation parameters
+*   Sequential dialing with delays between glyphs
 *   User input blocked during auto-dial sequence
 *   Error handling for invalid sequences
-*   Haptic feedback: Medium impact per glyph
+*   Haptic feedback provided for each glyph
 
-### 2.5. Swipe Gesture Interactions
+### 2.8. Swipe Gesture Interactions
 
 Cartouche items support swipe gestures for quick actions:
 
 **Left Swipe (Re-dial):**
-*   Orange background (#FF6600)
+*   Orange background color
 *   Phone icon with "Dial" text
 *   Triggers auto-dial functionality
 *   Scale animation on reveal
@@ -164,13 +162,7 @@ Cartouche items support swipe gestures for quick actions:
 *   Deletes entry from address book
 *   Success haptic notification on delete
 
-**Technical:**
-*   Implemented with `react-native-gesture-handler` Swipeable
-*   Animated.interpolate for smooth scale transitions
-*   100px action width on both sides
-*   Prevents overscroll with `overshootLeft/Right: false`
-
-### 2.6. Removing Addresses
+### 2.9. Removing Addresses
 
 *   **User Action:** In the Cartouche View, the user can trigger a delete action on a specific address entry via swipe gesture (swipe right).
 *   **System Response:** The application removes the entry from the Cartouche and updates the persistent storage.
@@ -207,18 +199,16 @@ The data model defines the structures used to represent the DHD's state and the 
 
 *   **Purpose:** Represents a static definition of a single Stargate glyph available on the DHD.
 *   **Attributes:**
-    *   `slug` (String): A unique identifier for the glyph (e.g., "glyph-taurus"). This is used for logic, comparison, and storage.
-    *   `name` (String): A human-readable name for the glyph (e.g., "Taurus").
-    *   `image` (Asset Reference): The reference ID or path to the local image asset (e.g., the result of a `require` call in React Native).
+    *   `slug` (String): A unique identifier for the glyph (e.g., "earth", "taurus"). This is used for logic, comparison, and storage.
+    *   `name` (String): A human-readable name for the glyph (e.g., "Earth", "Taurus").
 
 ### 4.2. Dialing Sequence (Stargate Address)
 
 *   **Purpose:** Represents a specific combination of glyphs that make up a gate address.
-*   **Attributes:**
-    *   `glyphs` (Array<String>): An ordered list of exactly 7 Glyph `slug`s.
+*   **Structure:** An ordered array of Glyph `slug` strings (e.g., `["earth", "taurus", "leo", ...]`).
 *   **Constraints:**
     *   Must contain exactly 7 items to be valid for activation.
-    *   All items in the list must be unique.
+    *   All items in the array must be unique.
 
 ### 4.3. Cartouche Entry
 
@@ -238,12 +228,12 @@ The data model defines the structures used to represent the DHD's state and the 
 
 The application requires persistent storage to retain the user's "Cartouche" (saved addresses) across application restarts.
 
-*   **Technology:** `AsyncStorage` (React Native's simple, unencrypted, asynchronous, persistent, key-value storage system).
+*   **Technology:** AsyncStorage (simple, unencrypted, asynchronous, persistent, key-value storage).
 *   **Storage Key:** `@dhd_cartouche_v1`
-*   **Data Format:** JSON. The `Cartouche` array is serialized into a JSON string before saving.
+*   **Data Format:** JSON. The Cartouche array is serialized into a JSON string before saving.
 *   **Lifecycle:**
-    *   **Load:** On application launch, the app reads the string from `@dhd_cartouche_v1`, parses it, and hydrates the in-memory state.
-    *   **Save:** Whenever a new address is added or an existing one deleted, the updated in-memory list is serialized and written to storage.
+    *   **Load:** On application launch or when the Cartouche screen comes into focus, the app reads the stored data, parses it, and displays the saved addresses.
+    *   **Save:** Whenever a new address is added or an existing one deleted, the updated list is serialized and written to storage.
 
 ## 6. Sound Effects
 
@@ -257,18 +247,18 @@ The application relies on specific sound effects to enhance the user experience 
 
 The application is built with modern React Native and Expo technologies:
 
-*   **Core Framework:** React Native 0.81.5
+*   **Core Framework:** React Native 0.81
 *   **Development Platform:** Expo SDK 54
 *   **Language:** TypeScript 5.9 (strict mode)
-*   **Routing:** Expo Router 6 (file-based routing)
-*   **Gesture Handler:** react-native-gesture-handler 2.28.0
-*   **Animations:** react-native-reanimated 4.1.1
-*   **Graphics:** react-native-svg 15.12.1
-*   **Audio:** expo-audio 1.1.1
-*   **Haptics:** expo-haptics 15.0.8
-*   **Contacts:** expo-contacts 15.0.11
-*   **Storage:** AsyncStorage via @react-native-async-storage/async-storage
-*   **Testing:** Jest 29, React Native Testing Library
+*   **Routing:** Expo Router (file-based routing)
+*   **Gesture Handler:** react-native-gesture-handler
+*   **Animations:** react-native-reanimated
+*   **Graphics:** react-native-svg
+*   **Audio:** expo-audio
+*   **Haptics:** expo-haptics
+*   **Contacts:** expo-contacts
+*   **Storage:** @react-native-async-storage/async-storage
+*   **Testing:** Jest, React Native Testing Library
 
 ## 8. Assumptions & Constraints (from original implementation)
 
