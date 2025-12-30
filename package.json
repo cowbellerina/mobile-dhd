@@ -79,5 +79,9 @@
     "email": "cowbellerina@fastmail.com"
   },
   "license": "MIT",
-  "private": false
+  "private": false,
+  "engines": {
+    "node": ">=20.19.4",
+    "npm": ">=10.0.0"
+  }
 }
