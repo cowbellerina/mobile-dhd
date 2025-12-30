@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <g id="border">
+    <path d="M68,4v64H4V4h64M72,0H0v72h72V0h0Z" style="fill: #333;"/>
+  </g>
+  <g id="glyphs">
+    <path id="norma" d="M48.25,18.95l-8.3,10.04,13.38,2.18-5.08-12.22ZM27.29,39.39l-8.62,12.52,13.46,1.14-4.84-13.66Z" style="fill: #333;"/>
+  </g>
+</svg>

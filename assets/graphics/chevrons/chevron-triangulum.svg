@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <g id="border">
+    <path d="M68,4v64H4V4h64M72,0H0v72h72V0h0Z" style="fill: #333;"/>
+  </g>
+  <g id="glyphs">
+    <path id="triangulum" d="M23.2,12.23l-3,47.54,31.6-5.9L23.2,12.23ZM27.5,28.69l13.04,20.44-14.28,2.68,1.24-23.12Z" style="fill: #333;"/>
+  </g>
+</svg>

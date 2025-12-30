@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <g id="border">
+    <path d="M68,4v64H4V4h64M72,0H0v72h72V0h0Z" style="fill: #333;"/>
+  </g>
+  <g id="glyphs">
+    <path id="equuleus" d="M34.03,24.62l-11.82-4.57.94,6.63-15.14,19.66,53.24,5.62-1.76-11.65,4.5-7.9-10.51-3.32,1.52,17.18-38.77-3.38,10.68-14.53,7.12-3.74Z" style="fill: #333;"/>
+  </g>
+</svg>

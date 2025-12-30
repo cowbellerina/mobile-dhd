@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <g id="border">
+    <path d="M68,4v64H4V4h64M72,0H0v72h72V0h0Z" style="fill: #333;"/>
+  </g>
+  <g id="glyphs">
+    <path id="aries" d="M50.01,12.56l-18.95,16.62-12.79,26.5-4.39,3.02,8.62,5.83-.37-6.45,14.08-27.09,17.58-15.71,4.33-1.5-8.03-6.31-.08,5.09Z" style="fill: #333;"/>
+  </g>
+</svg>

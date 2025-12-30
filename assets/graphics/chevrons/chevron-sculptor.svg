@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <g id="border">
+    <path d="M68,4v64H4V4h64M72,0H0v72h72V0h0Z" style="fill: #333;"/>
+  </g>
+  <g id="glyphs">
+    <path id="sculptor" d="M49.98,11.23l1.18,4.66-11.61,31.87H13.1s8.25,13.02,8.25,13.02l25.15-9.29-.36-5.23,8.84-27.75,3.9-3.72-8.91-3.55Z" style="fill: #333;"/>
+  </g>
+</svg>
