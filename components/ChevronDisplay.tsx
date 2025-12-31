@@ -36,7 +36,7 @@ const Chevron = React.memo(({ slug, index }: { slug?: string; index: number }) =
         width="100%"
         height="100%"
         color={color}
-        testID={`chevron-glyph-${index}`}
+        testID={`chevron-glyph-${active ? slug : 'placeholder-' + index}`}
       />
     </Animated.View>
   );
@@ -51,7 +51,7 @@ export default function ChevronDisplay({ glyphSlugs }: ChevronDisplayProps) {
         <Chevron
           key={index}
           slug={glyphSlugs[index]}
-          index={index}
+          index={index + 1}
         />
       ))}
     </View>

@@ -34,7 +34,7 @@ export const DialHomeDevice: React.FC<DHDScreenProps> = ({
   isDomeActive
 }) => {
   return (
-    <Svg style={style} viewBox="150 150 900 900">
+    <Svg style={style} viewBox="150 150 900 900" testID="dial-home-device">
       <DHDDefs isDomeActive={isDomeActive} />
       <G transform="matrix(1.33333 0 0 -1.33333 173.33 1453.33)">
         <DHDBackground />

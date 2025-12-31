@@ -1,6 +1,6 @@
-import { GLYPHS } from '../constants/Glyphs';
+import { GLYPHS } from '../../constants/Glyphs';
 
-describe('Glyphs Constant', () => {
+describe('Glyphs', () => {
   it('should contain 38 glyphs', () => {
     expect(GLYPHS.length).toBe(38);
   });
