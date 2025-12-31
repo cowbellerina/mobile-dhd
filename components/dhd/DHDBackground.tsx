@@ -5,7 +5,7 @@ import { Colors } from '@/constants/Theme';
 /**
  * DHDBackground component - renders the background rings of the DHD
  */
-export const DHDBackground: React.FC = () => {
+export const DHDBackground: React.FC = React.memo(() => {
   return (
     <G>
       {/* Outer ring background */}
@@ -28,4 +28,6 @@ export const DHDBackground: React.FC = () => {
       />
     </G>
   );
-};
+});
+
+DHDBackground.displayName = 'DHDBackground';

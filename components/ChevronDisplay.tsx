@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import Animated, { useAnimatedStyle, withTiming, withSpring } from 'react-native-reanimated';
-import { Colors, Spacing, Layout, Animation } from '@/constants/Theme';
+import { Colors, Spacing, Layout } from '@/constants/Theme';
 import { GLYPH_COMPONENT_MAP, ChevronPlaceholder } from '@/components/chevrons';
 
 /**
@@ -17,19 +16,13 @@ const Chevron = React.memo(({ slug, index }: { slug?: string; index: number }) =
   const GlyphComponent = (slug ? GLYPH_COMPONENT_MAP[slug] : null) || ChevronPlaceholder;
   const color = active ? Colors.glyph.active : Colors.glyph.inactive;
 
-  const animatedStyle = useAnimatedStyle(() => {
-    return {
-      backgroundColor: withTiming(active ? 'transparent' : Colors.interactive.hover, { duration: Animation.duration.normal }),
-      transform: [
-        { scale: withSpring(active ? Animation.scale.active : Animation.scale.inactive) }
-      ],
-      shadowOpacity: withTiming(active ? Animation.opacity.shadow : Animation.opacity.hidden),
-    };
-  });
+  const chevronStyle = active
+    ? styles.chevron
+    : [styles.chevron, { backgroundColor: Colors.interactive.hover }];
 
   return (
-    <Animated.View
-      style={[styles.chevron, animatedStyle]}
+    <View
+      style={chevronStyle}
       testID={`chevron-${index}`}
     >
       <GlyphComponent
@@ -38,8 +31,10 @@ const Chevron = React.memo(({ slug, index }: { slug?: string; index: number }) =
         color={color}
         testID={`chevron-glyph-${active ? slug : 'placeholder-' + index}`}
       />
-    </Animated.View>
+    </View>
   );
+}, (prev, next) => {
+  return prev.slug === next.slug;
 });
 
 Chevron.displayName = 'Chevron';
@@ -69,10 +64,6 @@ const styles = StyleSheet.create({
     width: Layout.chevron.size,
     height: Layout.chevron.size,
     borderRadius: Spacing.xs,
-    shadowColor: Colors.shadow.orange,
-    shadowOffset: { width: 0, height: 0 },
-    shadowRadius: Layout.shadow.radius,
-    elevation: Layout.shadow.elevation,
     alignItems: 'center',
     justifyContent: 'center',
     overflow: 'hidden',

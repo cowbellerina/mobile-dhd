@@ -15,7 +15,7 @@ interface DHDGlyphKeysProps {
 /**
  * DHDGlyphKeys component - contains all 38 glyph keys arranged around the DHD
  */
-export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = ({ dialedSlugs, onGlyphPress}) => {
+export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlugs, onGlyphPress}) => {
   return (
     <G>
                 <DHDKey slug="andromeda" active={dialedSlugs.includes("andromeda")} onPress={onGlyphPress}>
@@ -709,4 +709,9 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = ({ dialedSlugs, onGlyph
                 </DHDKey>
             </G>
   );
-};
+}, (prev, next) => {
+  return prev.dialedSlugs.length === next.dialedSlugs.length &&
+    prev.dialedSlugs.every((slug, i) => slug === next.dialedSlugs[i]);
+});
+
+DHDGlyphKeys.displayName = 'DHDGlyphKeys';

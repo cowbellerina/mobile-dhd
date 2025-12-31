@@ -1,5 +1,5 @@
 import React from 'react';
-import { Defs, LinearGradient, RadialGradient, Stop, Filter, FeGaussianBlur, FeColorMatrix, FeMerge, FeMergeNode } from 'react-native-svg';
+import { Defs, LinearGradient, RadialGradient, Stop } from 'react-native-svg';
 
 /**
  * Props for the DHDDefs component
@@ -76,24 +76,6 @@ export const DHDDefs: React.FC<DHDDefsProps> = ({ isDomeActive }) => {
         <Stop offset="50%" stopColor="#ffcc00" stopOpacity="1" />
         <Stop offset="100%" stopColor="#ffaa00" stopOpacity="1" />
       </LinearGradient>
-
-      {/* Golden glow filter for active keys */}
-      <Filter id="goldenGlow" x="-50%" y="-50%" width="200%" height="200%">
-        <FeGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur" />
-        <FeColorMatrix
-          in="blur"
-          type="matrix"
-          values="1 0 0 0 0
-                  0.8 0 0 0 0
-                  0 0 0 0 0
-                  0 0 0 0.5 0"
-          result="coloredBlur"
-        />
-        <FeMerge>
-          <FeMergeNode in="coloredBlur" />
-          <FeMergeNode in="SourceGraphic" />
-        </FeMerge>
-      </Filter>
     </Defs>
   );
 };

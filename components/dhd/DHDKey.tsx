@@ -17,9 +17,8 @@ interface DHDKeyProps {
 
 /**
  * DHDKey component - represents a single glyph key on the DHD
- * Handles the active state styling by modifying fill colors
  */
-export const DHDKey: React.FC<DHDKeyProps> = ({
+export const DHDKey: React.FC<DHDKeyProps> = React.memo(({
   slug,
   children,
   active,
@@ -34,13 +33,11 @@ export const DHDKey: React.FC<DHDKeyProps> = ({
       const currentFill = props.fill || style.fill;
       let newFill = currentFill;
 
-      // Logic for Glyph Symbols - change to gold when active
       if (currentFill === '#505050') {
         if (active) {
           newFill = 'url(#goldSymbol)';
         }
       }
-      // Logic for Keys - change to gold highlight when active
       else if (currentFill === 'url(#brushedMetal)' && active) {
         newFill = 'url(#goldHighlight)';
       }
@@ -62,9 +59,13 @@ export const DHDKey: React.FC<DHDKeyProps> = ({
     <G
       id={`glyph-${slug}`}
       onPress={() => onPress(slug)}
-      filter={active ? "url(#goldenGlow)" : undefined}
+      opacity={active ? 1.0 : 0.8}
     >
       {processedChildren}
     </G>
   );
-};
+}, (prev, next) => {
+  return prev.active === next.active;
+});
+
+DHDKey.displayName = 'DHDKey';

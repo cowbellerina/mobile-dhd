@@ -4,7 +4,7 @@ import { G, Path } from 'react-native-svg';
 /**
  * DHDDomeRing component - the decorative metallic ring surrounding the activation dome
  */
-export const DHDDomeRing: React.FC = () => {
+export const DHDDomeRing: React.FC = React.memo(() => {
   return (
     <G>
                     <Path
@@ -779,4 +779,6 @@ export const DHDDomeRing: React.FC = () => {
                     />
     </G>
   );
-};
+});
+
+DHDDomeRing.displayName = 'DHDDomeRing';
