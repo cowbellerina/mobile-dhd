@@ -27,7 +27,7 @@ export const DHDDefs: React.FC<DHDDefsProps> = ({ isDomeActive }) => {
         fy="40%"
       >
         <Stop offset="0%" stopColor="#ff9999" stopOpacity="1" />
-        <Stop offset="40%" stopColor={isDomeActive ? "#ff3333" : "#ff0000"} stopOpacity="1" />
+        <Stop offset="40%" stopColor={isDomeActive ? "#ff0000" : "#b42323"} stopOpacity="1" />
         <Stop offset="100%" stopColor="#660000" stopOpacity="1" />
       </RadialGradient>
 
