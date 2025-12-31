@@ -13,13 +13,14 @@ import { StorageService } from '@/services/StorageService';
 import { CartoucheEntry } from '@/types';
 import { logger } from '@/utils/logger';
 import { Colors, Spacing, FontSize, Animation } from '@/constants/Theme';
+import { isSequenceComplete, isValidDialingSequence, sequencesMatch } from '@/utils/sequenceValidation';
 
 export default function Index() {
   const params = useLocalSearchParams();
   const router = useRouter();
   const { sequence, dialGlyph, reset } = useDialing();
   const { playGlyphHit, playKawoosh, playDialAbort } = useDHDSounds();
-  const isDomeActive = sequence.length === 7;
+  const isDomeActive = isSequenceComplete(sequence);
   const resetTimerRef = useRef<NodeJS.Timeout | null>(null);
   const autoDialInProgressRef = useRef(false);
 
@@ -42,7 +43,7 @@ export default function Index() {
 
         // Parse and validate sequence
         const sequenceToDial = JSON.parse(params.autoDialSequence as string);
-        if (!Array.isArray(sequenceToDial) || sequenceToDial.length !== 7) {
+        if (!isValidDialingSequence(sequenceToDial)) {
           logger.error('Invalid auto-dial sequence format');
           return;
         }
@@ -134,8 +135,7 @@ export default function Index() {
       const cartouche = await StorageService.loadCartouche();
 
       const match = cartouche.find(entry =>
-        entry.dialingSequence.length === sequence.length &&
-        entry.dialingSequence.every((slug, index) => slug === sequence[index])
+        sequencesMatch(entry.dialingSequence, sequence)
       );
 
       if (match) {

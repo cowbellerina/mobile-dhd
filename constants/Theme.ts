@@ -3,6 +3,8 @@
  * All colors, spacing, and design tokens should be defined here
  */
 
+import { MAX_SEQUENCE_LENGTH } from './DialingConfig';
+
 export const Colors = {
   // Background colors
   background: {
@@ -125,7 +127,7 @@ export const Layout = {
   chevron: {
     size: 34,
     gap: 8,
-    count: 7, // Number of chevron slots in the display
+    count: MAX_SEQUENCE_LENGTH, // Number of chevron slots in the display
   },
   shadow: {
     radius: 10,

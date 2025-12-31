@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
+import { MAX_SEQUENCE_LENGTH } from '@/constants/DialingConfig';
 
-export function useDialing(maxLength = 7) {
+export function useDialing(maxLength = MAX_SEQUENCE_LENGTH) {
   const [sequence, setSequence] = useState<string[]>([]);
 
   const dialGlyph = useCallback((slug: string) => {
