@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback } from 'react';
-import { View, StyleSheet, Alert, Linking, TouchableOpacity, Text } from 'react-native';
+import { View, StyleSheet, Alert, TouchableOpacity, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import * as Contacts from 'expo-contacts';
@@ -13,7 +13,9 @@ import { StorageService } from '@/services/StorageService';
 import { CartoucheEntry } from '@/types';
 import { logger } from '@/utils/logger';
 import { Colors, Spacing, FontSize, Animation } from '@/constants/Theme';
-import { isSequenceComplete, isValidDialingSequence, sequencesMatch } from '@/utils/sequenceValidation';
+import { isSequenceComplete, isValidDialingSequence } from '@/utils/sequenceValidation';
+import { extractContactName, extractContactPhoneNumber } from '@/utils/contactHelpers';
+import { defaultDialingService } from '@/services/DialingService';
 
 export default function Index() {
   const params = useLocalSearchParams();
@@ -94,63 +96,53 @@ export default function Index() {
   const handleSaveNewDestination = useCallback(async () => {
       try {
         const { status } = await Contacts.requestPermissionsAsync();
-        if (status === 'granted') {
-            const contact = await Contacts.presentContactPickerAsync();
-            if (contact && contact.phoneNumbers && contact.phoneNumbers.length > 0) {
-                const phoneNumber = contact.phoneNumbers[0].number;
-                if (!phoneNumber) return;
-
-                const contactName = contact.name ||
-                                    [contact.firstName, contact.middleName, contact.lastName]
-                                      .filter(part => part)
-                                      .join(' ')
-                                      .trim() ||
-                                    'Unknown';
-
-                const newEntry: CartoucheEntry = {
-                    id: Crypto.randomUUID(),
-                    name: contactName,
-                    phoneNumber: phoneNumber,
-                    dialingSequence: sequence
-                };
-
-                await StorageService.saveCartoucheEntry(newEntry);
-                Alert.alert("Saved", `${newEntry.name} added to Cartouche.`);
-                reset();
-            }
-        } else {
-            Alert.alert("Permission denied", "Contacts permission is required to save addresses.");
+        if (status !== 'granted') {
+          Alert.alert("Permission denied", "Contacts permission is required to save addresses.");
+          return;
         }
+
+        const contact = await Contacts.presentContactPickerAsync();
+        if (!contact) return;
+
+        const phoneNumber = extractContactPhoneNumber(contact);
+        if (!phoneNumber) return;
+
+        const contactName = extractContactName(contact);
+
+        const newEntry: CartoucheEntry = {
+          id: Crypto.randomUUID(),
+          name: contactName,
+          phoneNumber: phoneNumber,
+          dialingSequence: sequence
+        };
+
+        await StorageService.saveCartoucheEntry(newEntry);
+        Alert.alert("Saved", `${newEntry.name} added to Cartouche.`);
+        reset();
       } catch (e) {
-          logger.error("Contact picker error", e);
+        logger.error("Contact picker error", e);
       }
   }, [sequence, reset]);
 
   const handleDomePress = useCallback(async () => {
     if (!isDomeActive) return;
 
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
-
     try {
-      const cartouche = await StorageService.loadCartouche();
+      const result = await defaultDialingService.dialSequence(sequence);
 
-      const match = cartouche.find(entry =>
-        sequencesMatch(entry.dialingSequence, sequence)
-      );
-
-      if (match) {
+      if (result.match) {
         playKawoosh();
-        Linking.openURL(`tel:${match.phoneNumber}`);
+        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Heavy);
         resetTimerRef.current = setTimeout(reset, Animation.timeout.resetAfterDial);
       } else {
         playDialAbort();
         Alert.alert(
-            "Unknown Address",
-            "No destination found for this sequence. Do you want to save it?",
-            [
-                { text: "Cancel", style: "cancel", onPress: reset },
-                { text: "Save", onPress: handleSaveNewDestination }
-            ]
+          "Unknown Address",
+          "No destination found for this sequence. Do you want to save it?",
+          [
+            { text: "Cancel", style: "cancel", onPress: reset },
+            { text: "Save", onPress: handleSaveNewDestination }
+          ]
         );
       }
     } catch (e) {
