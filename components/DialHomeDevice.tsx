@@ -10,7 +10,7 @@ import { DHDGlyphKeys } from './dhd/DHDGlyphKeys';
 /**
  * Props for the DialHomeDevice component
  */
-interface DHDScreenProps {
+interface DialHomeDeviceProps {
   /** Optional style to apply to the SVG container */
   style?: ViewStyle;
   /** Array of glyph slugs that have been dialed in sequence */
@@ -26,7 +26,7 @@ interface DHDScreenProps {
 /**
  * DialHomeDevice component - the main DHD interface
  */
-export const DialHomeDevice: React.FC<DHDScreenProps> = ({
+export const DialHomeDevice: React.FC<DialHomeDeviceProps> = ({
   style,
   dialedSlugs,
   onGlyphPress,
