@@ -47,7 +47,7 @@ npm run lint
 
 ## License
 
-See [LICENSE](./LICENSE]
+See [license](./LICENSE)
 
 Stargate and all related marks, logos, and concepts are trademarks of **Amazon MGM Studios**.
 This application is not affiliated with, endorsed by, or sponsored by Amazon MGM Studios.
