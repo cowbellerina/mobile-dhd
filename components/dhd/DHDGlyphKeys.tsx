@@ -8,6 +8,8 @@ import { DHDKey } from './DHDKey';
 interface DHDGlyphKeysProps {
   /** Array of glyph slugs that have been dialed */
   dialedSlugs: string[];
+  /** Whether all glyphs are disabled (e.g., sequence complete) */
+  disabled?: boolean;
   /** Callback invoked when a glyph is pressed */
   onGlyphPress: (slug: string) => void;
 }
@@ -15,10 +17,10 @@ interface DHDGlyphKeysProps {
 /**
  * DHDGlyphKeys component - contains all 38 glyph keys arranged around the DHD
  */
-export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlugs, onGlyphPress}) => {
+export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlugs, disabled = false, onGlyphPress}) => {
   return (
     <G>
-                <DHDKey slug="andromeda" active={dialedSlugs.includes("andromeda")} onPress={onGlyphPress}>
+                <DHDKey slug="andromeda" active={dialedSlugs.includes("andromeda")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="m0 0 1.789.942c27.879 14.696 57.594 24.895 88.317 30.313l1.988.35 13.952-83.625-1.944-.349c-21.557-3.877-42.424-11.028-62.021-21.256l-1.747-.912z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -36,7 +38,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="pegasus" active={dialedSlugs.includes("pegasus")} onPress={onGlyphPress}>
+                <DHDKey slug="pegasus" active={dialedSlugs.includes("pegasus")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="m0 0 1.378 1.473c21.32 22.766 46.091 42.078 73.627 57.398l1.768.984 40.335-74.537-1.715-.964C96.129-26.473 78.747-40.044 63.73-55.983l-1.355-1.439z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -54,7 +56,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="earth" active={dialedSlugs.includes("earth")} onPress={onGlyphPress}>
+                <DHDKey slug="earth" active={dialedSlugs.includes("earth")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="m0 0 .817 1.837C13.578 30.518 30.604 56.874 51.423 80.17l1.353 1.514L115.14 24.27l-1.298-1.469C99.348 6.403 87.434-12.115 78.429-32.238l-.811-1.812z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -77,7 +79,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="monoceros" active={dialedSlugs.includes("monoceros")} onPress={onGlyphPress}>
+                <DHDKey slug="monoceros" active={dialedSlugs.includes("monoceros")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="m0 0 .176 2.002a303.05 303.05 0 0 0 22.282 90.361l.784 1.878 77.618-34.05-.741-1.806a218.153 218.153 0 0 1-15.47-63.407l-.177-1.98z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -95,7 +97,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="centaurus" active={dialedSlugs.includes("centaurus")} onPress={onGlyphPress}>
+                <DHDKey slug="centaurus" active={dialedSlugs.includes("centaurus")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0c-7.563 30.166-10.373 61.276-8.352 92.467l.131 2.033 84.482-7.003-.113-1.947c-1.262-21.849.769-43.635 6.036-64.752l.483-1.934L.487-1.944Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -113,7 +115,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="scorpio" active={dialedSlugs.includes("scorpio")} onPress={onGlyphPress}>
+                <DHDKey slug="scorpio" active={dialedSlugs.includes("scorpio")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0a307.754 307.754 0 0 0-12.275 20.687C-23.243 40.953-31.881 62.396-37.95 84.42l-.543 1.969 82.205 20.813.531-1.87a218.443 218.443 0 0 1 18.026-44.308 221.189 221.189 0 0 1 8.7-14.684l1.08-1.671L1.091-1.686Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -131,7 +133,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="sculptor" active={dialedSlugs.includes("sculptor")} onPress={onGlyphPress}>
+                <DHDKey slug="sculptor" active={dialedSlugs.includes("sculptor")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0a299.923 299.923 0 0 0-63.033 67.415L-64.18 69.1l70.981 46.371 1.108-1.603a215.674 215.674 0 0 1 44.176-46.979l1.565-1.23L1.579-1.237Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -149,7 +151,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="bootes" active={dialedSlugs.includes("bootes")} onPress={onGlyphPress}>
+                <DHDKey slug="bootes" active={dialedSlugs.includes("bootes")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0a302.028 302.028 0 0 0-81.265 43.199l-1.634 1.221 52.077 66.905 1.568-1.153a217.336 217.336 0 0 1 56.803-30.009l1.874-.658L1.898-.662Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -167,7 +169,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="virgo" active={dialedSlugs.includes("virgo")} onPress={onGlyphPress}>
+                <DHDKey slug="virgo" active={dialedSlugs.includes("virgo")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0a302.74 302.74 0 0 0-90.643 14.71l-1.937.627 27.531 80.186 1.861-.588A217.812 217.812 0 0 1 .044 84.778l1.977-.023L2.018-.018Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -185,7 +187,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="pisces" active={dialedSlugs.includes("pisces")} onPress={onGlyphPress}>
+                <DHDKey slug="pisces" active={dialedSlugs.includes("pisces")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="m0 0 1.96.04a215.604 215.604 0 0 1 63.027 10.729l1.875.615 27.522-80.176-1.915-.638A299.723 299.723 0 0 0 2.023-84.737l-2.028-.03z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -203,7 +205,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="scutum" active={dialedSlugs.includes("scutum")} onPress={onGlyphPress}>
+                <DHDKey slug="scutum" active={dialedSlugs.includes("scutum")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="m0 0 1.846.672a219.803 219.803 0 0 1 29.328 13.183A220.047 220.047 0 0 1 58.06 31.052l1.571 1.175 52.073-66.908-1.62-1.222a305.58 305.58 0 0 0-80.649-43.605l-1.91-.684z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -221,7 +223,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="sextans" active={dialedSlugs.includes("sextans")} onPress={onGlyphPress}>
+                <DHDKey slug="sextans" active={dialedSlugs.includes("sextans")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="m0 0 1.545 1.232A215.552 215.552 0 0 1 45.066 48.1l1.106 1.616 70.964-46.364-1.137-1.683a299.719 299.719 0 0 0-62.358-67.307l-1.582-1.253z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -239,7 +241,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="sagittarius" active={dialedSlugs.includes("sagittarius")} onPress={onGlyphPress}>
+                <DHDKey slug="sagittarius" active={dialedSlugs.includes("sagittarius")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="m0 0 1.065 1.668a217.764 217.764 0 0 1 26.158 58.513l.525 1.879 82.187-20.815-.537-1.965a302.623 302.623 0 0 0-37.34-83.955l-1.089-1.696z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -257,7 +259,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="hydra" active={dialedSlugs.includes("hydra")} onPress={onGlyphPress}>
+                <DHDKey slug="hydra" active={dialedSlugs.includes("hydra")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="m0 0 .475 1.93a217.337 217.337 0 0 1 5.993 64.027L6.36 67.9l84.497 6.997.127-2.037a302.006 302.006 0 0 0-8.337-91.717l-.484-1.95z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -275,7 +277,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="aries" active={dialedSlugs.includes("aries")} onPress={onGlyphPress}>
+                <DHDKey slug="aries" active={dialedSlugs.includes("aries")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0a215.755 215.755 0 0 1-15.164 62.758l-.734 1.805 77.646 34.055.783-1.882A299.991 299.991 0 0 0 84.487 7.011l.172-1.998L.172-1.984Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -293,7 +295,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="eridanus" active={dialedSlugs.includes("eridanus")} onPress={onGlyphPress}>
+                <DHDKey slug="eridanus" active={dialedSlugs.includes("eridanus")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0a220.901 220.901 0 0 1-7.542 15.336 218.447 218.447 0 0 1-27.271 39.37l-1.277 1.467 62.392 57.431 1.351-1.53c15.134-17.139 28.372-36.115 39.35-56.399a307.651 307.651 0 0 0 10.611-21.613l.815-1.836L.809-1.818Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -311,7 +313,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="libra" active={dialedSlugs.includes("libra")} onPress={onGlyphPress}>
+                <DHDKey slug="libra" active={dialedSlugs.includes("libra")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0c-14.813 15.971-31.965 29.595-50.978 40.492l-1.693.97 40.351 74.554 1.772-1c27.244-15.37 51.776-34.746 72.913-57.592l1.363-1.472L1.355-1.461Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -329,7 +331,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="leo" active={dialedSlugs.includes("leo")} onPress={onGlyphPress}>
+                <DHDKey slug="leo" active={dialedSlugs.includes("leo")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0a218.082 218.082 0 0 1-61.616 21.706l-1.92.366 13.956 83.604 2.001-.369c36.354-6.709 56.224-13.823 87.904-30.747l1.774-.948L1.753-.933Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -347,7 +349,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                     />
                 </DHDKey>
 
-                <DHDKey slug="serpens-caput" active={dialedSlugs.includes("serpens-caput")} onPress={onGlyphPress}>
+                <DHDKey slug="serpens-caput" active={dialedSlugs.includes("serpens-caput")} disabled={disabled} onPress={onGlyphPress}>
                     <Path
                         d="M0 0a218.461 218.461 0 0 1-34.881 2.816c-10.218 0-20.514-.733-30.599-2.179l-1.942-.279-13.641 83.665 2.006.298a301.142 301.142 0 0 0 44.156 3.262c16.389 0 32.922-1.354 49.137-4.024l1.985-.327L1.958-.318Z"
                         fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -366,7 +368,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 </DHDKey>
 
             {/* Inner ring glyphs */}
-                <DHDKey slug="orion" active={dialedSlugs.includes("orion")} onPress={onGlyphPress}>
+                <DHDKey slug="orion" active={dialedSlugs.includes("orion")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="m0 0 1.804.938c18.631 9.688 38.468 16.477 58.961 20.176l1.995.36 15.563-93.287-1.919-.367a113.252 113.252 0 0 1-29.671-10.105l-1.734-.873z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -384,7 +386,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="lynx" active={dialedSlugs.includes("lynx")} onPress={onGlyphPress}>
+                <DHDKey slug="lynx" active={dialedSlugs.includes("lynx")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="m0 0 1.393 1.473c14.302 15.128 30.834 28.021 49.138 38.32l1.772.998 45-83.159-1.679-.974a113.241 113.241 0 0 1-24.687-19.309l-1.356-1.406z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -402,7 +404,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="capricorn" active={dialedSlugs.includes("capricorn")} onPress={onGlyphPress}>
+                <DHDKey slug="capricorn" active={dialedSlugs.includes("capricorn")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="m0 0 .828 1.84c8.593 19.116 19.936 36.718 33.714 52.317l1.352 1.53 69.597-64.074-1.252-1.465a113.095 113.095 0 0 1-16.832-26.345l-.82-1.787z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -420,7 +422,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="canis-minor" active={dialedSlugs.includes("canis-minor")} onPress={onGlyphPress}>
+                <DHDKey slug="canis-minor" active={dialedSlugs.includes("canis-minor")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="m0 0 .183 2.008a208.787 208.787 0 0 0 14.752 60.294l.777 1.897 86.611-37.997-.693-1.785a113.946 113.946 0 0 1-7.203-30.265l-.19-1.964z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -438,7 +440,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="taurus" active={dialedSlugs.includes("taurus")} onPress={onGlyphPress}>
+                <DHDKey slug="taurus" active={dialedSlugs.includes("taurus")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0c-4.983 20.103-6.906 40.829-5.715 61.605l.117 2.049 94.267-7.814-.07-1.908a112.666 112.666 0 0 1 3.108-30.741l.468-1.924L.484-1.951Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -456,7 +458,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="norma" active={dialedSlugs.includes("norma")} onPress={onGlyphPress}>
+                <DHDKey slug="norma" active={dialedSlugs.includes("norma")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0a211.014 211.014 0 0 0-8.177 13.824A209.108 209.108 0 0 0-25.4 56.13l-.563 1.98 91.708 23.221.56-1.816a114.169 114.169 0 0 1 12.892-27.82l1.065-1.668L1.09-1.692Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -474,7 +476,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="cancer" active={dialedSlugs.includes("cancer")} onPress={onGlyphPress}>
+                <DHDKey slug="cancer" active={dialedSlugs.includes("cancer")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0a206.603 206.603 0 0 0-42.028 44.721l-1.17 1.689 79.187 51.729 1.118-1.541a112.698 112.698 0 0 1 21.015-21.981l1.548-1.231L1.581-1.245Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -492,7 +494,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="perseus" active={dialedSlugs.includes("perseus")} onPress={onGlyphPress}>
+                <DHDKey slug="perseus" active={dialedSlugs.includes("perseus")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0a208.086 208.086 0 0 0-54.048 28.552l-1.658 1.218 58.11 74.653 1.558-1.093a113.508 113.508 0 0 1 26.793-13.893l1.855-.667L1.902-.67Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -510,7 +512,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="crater" active={dialedSlugs.includes("crater")} onPress={onGlyphPress}>
+                <DHDKey slug="crater" active={dialedSlugs.includes("crater")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0a208.585 208.585 0 0 0-60.163 9.646l-1.956.617 30.71 89.447 1.835-.539A113.883 113.883 0 0 1 .07 94.581l1.957-.042L2.024-.024Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -528,7 +530,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="equuleus" active={dialedSlugs.includes("equuleus")} onPress={onGlyphPress}>
+                <DHDKey slug="equuleus" active={dialedSlugs.includes("equuleus")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="m0 0 1.923.074c9.991.389 19.895 2.11 29.439 5.114l1.86.586 30.705-89.452L62-84.31A206.449 206.449 0 0 0 2.04-94.552l-2.043-.043z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -546,7 +548,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="mic" active={dialedSlugs.includes("mic")} onPress={onGlyphPress}>
+                <DHDKey slug="mic" active={dialedSlugs.includes("mic")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="m0 0 1.804.69a115.46 115.46 0 0 1 13.592 6.244 114.578 114.578 0 0 1 12.656 7.962l1.564 1.132L87.7-58.604l-1.634-1.22A210.063 210.063 0 0 0 60.4-76.235a210.452 210.452 0 0 0-27.779-12.512l-1.917-.701z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -564,7 +566,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="aquarius" active={dialedSlugs.includes("aquarius")} onPress={onGlyphPress}>
+                <DHDKey slug="aquarius" active={dialedSlugs.includes("aquarius")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="m0 0 1.507 1.235a112.732 112.732 0 0 1 20.386 21.847l1.113 1.568 79.191-51.742-1.154-1.686A206.456 206.456 0 0 0 59.67-73.371l-1.583-1.267z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -582,7 +584,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="triangulum" active={dialedSlugs.includes("triangulum")} onPress={onGlyphPress}>
+                <DHDKey slug="triangulum" active={dialedSlugs.includes("triangulum")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="m0 0 1.036 1.662a113.75 113.75 0 0 1 12.373 27.329l.553 1.831 91.68-23.218-.554-1.976a208.631 208.631 0 0 0-24.834-55.645l-1.086-1.709z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -600,7 +602,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="cetus" active={dialedSlugs.includes("cetus")} onPress={onGlyphPress}>
+                <DHDKey slug="cetus" active={dialedSlugs.includes("cetus")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="m0 0 .456 1.918a113.61 113.61 0 0 1 3.023 30.027l-.064 1.903 94.283 7.808.113-2.053a207.99 207.99 0 0 0-5.665-60.863l-.479-1.958z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -618,7 +620,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="leo-minor" active={dialedSlugs.includes("leo-minor")} onPress={onGlyphPress}>
+                <DHDKey slug="leo-minor" active={dialedSlugs.includes("leo-minor")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0a112.684 112.684 0 0 1-6.904 29.616l-.678 1.78 86.619 37.991.775-1.904A206.659 206.659 0 0 0 94.257 7.84l.178-2.004L.185-1.97Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -636,7 +638,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="gemini" active={dialedSlugs.includes("gemini")} onPress={onGlyphPress}>
+                <DHDKey slug="gemini" active={dialedSlugs.includes("gemini")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0a114.263 114.263 0 0 1-16.235 26.011l-1.214 1.462 69.602 64.068 1.35-1.554A209.25 209.25 0 0 0 79.497 52.43a213.317 213.317 0 0 0 7.102-14.41l.821-1.839L.814-1.804Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -654,7 +656,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="cra" active={dialedSlugs.includes("cra")} onPress={onGlyphPress}>
+                <DHDKey slug="cra" active={dialedSlugs.includes("cra")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0a112.773 112.773 0 0 1-24.036 19.418l-1.636.985 45.023 83.187 1.778-1.022c18.046-10.369 34.346-23.316 48.446-38.483l1.368-1.472L1.355-1.444Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -672,7 +674,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="auriga" active={dialedSlugs.includes("auriga")} onPress={onGlyphPress}>
+                <DHDKey slug="auriga" active={dialedSlugs.includes("auriga")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0a113.918 113.918 0 0 1-29.276 10.524l-1.874.396 15.57 93.29 2.013-.386A208.738 208.738 0 0 0 44.975 83.19l1.781-.945L1.748-.915Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -690,7 +692,7 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
                 />
                 </DHDKey>
 
-                <DHDKey slug="pisces-austrinius" active={dialedSlugs.includes("pisces-austrinius")} onPress={onGlyphPress}>
+                <DHDKey slug="pisces-austrinius" active={dialedSlugs.includes("pisces-austrinius")} disabled={disabled} onPress={onGlyphPress}>
                 <Path
                     d="M0 0a113.578 113.578 0 0 1-16.787 1.251c-4.824 0-9.693-.313-14.475-.93l-1.911-.247-15.567 93.311 2.02.294a207.107 207.107 0 0 0 29.761 2.154c10.82 0 21.747-.857 32.476-2.549l1.993-.314L1.944-.292Z"
                     fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
@@ -710,7 +712,8 @@ export const DHDGlyphKeys: React.FC<DHDGlyphKeysProps> = React.memo(({ dialedSlu
             </G>
   );
 }, (prev, next) => {
-  return prev.dialedSlugs.length === next.dialedSlugs.length &&
+  return prev.disabled === next.disabled &&
+    prev.dialedSlugs.length === next.dialedSlugs.length &&
     prev.dialedSlugs.every((slug, i) => slug === next.dialedSlugs[i]);
 });
 

@@ -22,30 +22,24 @@ export function useDHDSounds() {
     return {
         playGlyphHit: () => {
             try {
-                if (glyphHitPlayer.playing) {
-                    glyphHitPlayer.pause();
-                }
-                glyphHitPlayer.seekTo(0).then(() => glyphHitPlayer.play());
+                glyphHitPlayer.seekTo(0);
+                glyphHitPlayer.play();
             } catch (e) {
                 // Audio player may be deallocated, ignore
             }
         },
         playKawoosh: () => {
             try {
-                if (kawooshPlayer.playing) {
-                    kawooshPlayer.pause();
-                }
-                kawooshPlayer.seekTo(0).then(() => kawooshPlayer.play());
+                kawooshPlayer.seekTo(0);
+                kawooshPlayer.play();
             } catch (e) {
                 // Audio player may be deallocated, ignore
             }
         },
         playDialAbort: () => {
             try {
-                if (abortPlayer.playing) {
-                    abortPlayer.pause();
-                }
-                abortPlayer.seekTo(0).then(() => abortPlayer.play());
+                abortPlayer.seekTo(0)
+                abortPlayer.play();
             } catch (e) {
                 // Audio player may be deallocated, ignore
             }

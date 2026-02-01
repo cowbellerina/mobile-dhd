@@ -38,9 +38,11 @@ export const DialHomeDevice: React.FC<DialHomeDeviceProps> = ({
       <DHDDefs isDomeActive={isDomeActive} />
       <G transform="matrix(1.33333 0 0 -1.33333 173.33 1453.33)">
         <DHDBackground />
-        <DHDGlyphKeys dialedSlugs={dialedSlugs} onGlyphPress={onGlyphPress} />
-        <DHDActivationDome onDomePress={onDomePress} />
-        <DHDDomeRing />
+        <G transform="translate(15.95, 32.05) scale(0.95)">
+          <DHDActivationDome onDomePress={onDomePress} />
+          <DHDDomeRing />
+        </G>
+        <DHDGlyphKeys dialedSlugs={dialedSlugs} disabled={isDomeActive} onGlyphPress={onGlyphPress} />
       </G>
     </Svg>
   );

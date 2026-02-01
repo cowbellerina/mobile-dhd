@@ -42,17 +42,17 @@ export const DHDDefs: React.FC<DHDDefsProps> = ({ isDomeActive }) => {
 
       {/* Brushed metal gradient for inactive keys */}
       <LinearGradient id="brushedMetal" x1="0%" y1="0%" x2="100%" y2="100%">
-        <Stop offset="0%" stopColor="#888888" stopOpacity="1" />
-        <Stop offset="10%" stopColor="#5a5a5a" stopOpacity="1" />
-        <Stop offset="20%" stopColor="#6b6b6b" stopOpacity="1" />
-        <Stop offset="30%" stopColor="#4a4a4a" stopOpacity="1" />
-        <Stop offset="40%" stopColor="#5a5a5a" stopOpacity="1" />
-        <Stop offset="50%" stopColor="#3b3b3b" stopOpacity="1" />
-        <Stop offset="60%" stopColor="#2b2b2b" stopOpacity="1" />
-        <Stop offset="70%" stopColor="#3a3a3a" stopOpacity="1" />
-        <Stop offset="80%" stopColor="#252525" stopOpacity="1" />
-        <Stop offset="90%" stopColor="#1a1a1a" stopOpacity="1" />
-        <Stop offset="100%" stopColor="#0a0a0a" stopOpacity="1" />
+        <Stop offset="0%" stopColor="#a0a0a0" stopOpacity="1" />
+        <Stop offset="10%" stopColor="#757575" stopOpacity="1" />
+        <Stop offset="20%" stopColor="#858585" stopOpacity="1" />
+        <Stop offset="30%" stopColor="#656565" stopOpacity="1" />
+        <Stop offset="40%" stopColor="#757575" stopOpacity="1" />
+        <Stop offset="50%" stopColor="#555555" stopOpacity="1" />
+        <Stop offset="60%" stopColor="#454545" stopOpacity="1" />
+        <Stop offset="70%" stopColor="#555555" stopOpacity="1" />
+        <Stop offset="80%" stopColor="#404040" stopOpacity="1" />
+        <Stop offset="90%" stopColor="#353535" stopOpacity="1" />
+        <Stop offset="100%" stopColor="#252525" stopOpacity="1" />
       </LinearGradient>
 
       {/* Metallic highlight gradient */}
@@ -65,16 +65,16 @@ export const DHDDefs: React.FC<DHDDefsProps> = ({ isDomeActive }) => {
 
       {/* Gold highlight gradient for active keys */}
       <LinearGradient id="goldHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
-        <Stop offset="0%" stopColor="#fff7cc" stopOpacity="1" />
-        <Stop offset="40%" stopColor="#ffcc00" stopOpacity="1" />
-        <Stop offset="100%" stopColor="#ff9900" stopOpacity="1" />
+        <Stop offset="0%" stopColor="#e6d9a3" stopOpacity="1" />
+        <Stop offset="40%" stopColor="#d4a800" stopOpacity="1" />
+        <Stop offset="100%" stopColor="#cc7a00" stopOpacity="1" />
       </LinearGradient>
 
       {/* Gold symbol gradient for active glyphs */}
       <LinearGradient id="goldSymbol" x1="0%" y1="0%" x2="100%" y2="100%">
-        <Stop offset="0%" stopColor="#ffff00" stopOpacity="1" />
-        <Stop offset="50%" stopColor="#ffcc00" stopOpacity="1" />
-        <Stop offset="100%" stopColor="#ffaa00" stopOpacity="1" />
+        <Stop offset="0%" stopColor="#e6d400" stopOpacity="1" />
+        <Stop offset="50%" stopColor="#d4a800" stopOpacity="1" />
+        <Stop offset="100%" stopColor="#cc8800" stopOpacity="1" />
       </LinearGradient>
     </Defs>
   );

@@ -11,6 +11,8 @@ interface DHDKeyProps {
   children: React.ReactNode;
   /** Whether this key is currently in the active/dialed state */
   active: boolean;
+  /** Whether this key is disabled (e.g., when sequence is complete) */
+  disabled?: boolean;
   /** Callback invoked when the key is pressed */
   onPress: (slug: string) => void;
 }
@@ -22,6 +24,7 @@ export const DHDKey: React.FC<DHDKeyProps> = React.memo(({
   slug,
   children,
   active,
+  disabled = false,
   onPress,
 }) => {
   const processedChildren = React.Children.map(children, (child) => {
@@ -58,14 +61,14 @@ export const DHDKey: React.FC<DHDKeyProps> = React.memo(({
   return (
     <G
       id={`glyph-${slug}`}
-      onPress={() => onPress(slug)}
-      opacity={active ? 1.0 : 0.8}
+      onPress={disabled ? undefined : () => onPress(slug)}
+      opacity={active ? 0.95 : 0.9}
     >
       {processedChildren}
     </G>
   );
 }, (prev, next) => {
-  return prev.active === next.active;
+  return prev.active === next.active && prev.disabled === next.disabled;
 });
 
 DHDKey.displayName = 'DHDKey';
