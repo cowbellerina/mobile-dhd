@@ -10,7 +10,6 @@
     "newArchEnabled": true,
     "ios": {
       "bundleIdentifier": "com.example.mobiledhd",
-      "buildNumber": "1",
       "supportsTablet": true,
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
