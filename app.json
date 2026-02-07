@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "mobile-dhd",
+    "name": "DHD",
     "slug": "mobile-dhd",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "Dial Home Device",
+    "scheme": "dhd",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -55,7 +55,8 @@
         {
           "contactsPermission": "Allow Dial Home Device to access your contacts to save Stargate addresses."
         }
-      ]
+      ],
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true,
