@@ -4,9 +4,9 @@ Greetings, Tau'ri! This application simulates the Stargate Dial Home Device (DHD
 distant planets, this DHD connects you to your contacts via the primitive Tau'ri communication network (also known as
 "phone calls").
 
-| Dial Home Device | Cartouche |
-|---|---|
-| ![dhd-dialing.jpeg](./docs/screenshots/dhd-dialing.jpeg) | ![cartouche-redial.jpeg](./docs/screenshots/cartouche-redial.jpeg) |
+| Dialing | Unknown Address | Saved | Cartouche |
+|:---:|:---:|:---:|:---:|
+| <a href="./docs/screenshots/02 - DHD - dial.png"><img src="./docs/screenshots/02 - DHD - dial.png" width="160"></a> | <a href="./docs/screenshots/03 - DHD - unknown.png"><img src="./docs/screenshots/03 - DHD - unknown.png" width="160"></a> | <a href="./docs/screenshots/04 - DHD - save.png"><img src="./docs/screenshots/04 - DHD - save.png" width="160"></a> | <a href="./docs/screenshots/05 - Cartouche - default.png"><img src="./docs/screenshots/05 - Cartouche - default.png" width="160"></a> |
 
 ## Technology Stack
 
@@ -44,6 +44,10 @@ npm run start
 npm test
 npm run lint
 ```
+
+## Privacy Policy
+
+See [privacy policy](./PRIVACY.md)
 
 ## License
 
