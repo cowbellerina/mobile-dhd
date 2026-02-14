@@ -34,16 +34,12 @@ export const DialHomeDevice: React.FC<DialHomeDeviceProps> = ({
   isDomeActive
 }) => {
   return (
-    <Svg style={style} viewBox="150 150 900 900" testID="dial-home-device">
+    <Svg style={style} viewBox="0 0 900 900" testID="dial-home-device">
       <DHDDefs isDomeActive={isDomeActive} />
-      <G transform="matrix(1.33333 0 0 -1.33333 173.33 1453.33)">
-        <DHDBackground />
-        <G transform="translate(15.95, 32.05) scale(0.95)">
-          <DHDActivationDome onDomePress={onDomePress} />
-          <DHDDomeRing />
-        </G>
-        <DHDGlyphKeys dialedSlugs={dialedSlugs} disabled={isDomeActive} onGlyphPress={onGlyphPress} />
-      </G>
+      <DHDBackground />
+      <DHDGlyphKeys dialedSlugs={dialedSlugs} disabled={isDomeActive} onGlyphPress={onGlyphPress} />
+      <DHDActivationDome onDomePress={onDomePress} />
+      <DHDDomeRing />
     </Svg>
   );
 };

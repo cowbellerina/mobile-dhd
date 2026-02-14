@@ -17,28 +17,16 @@ export const DHDActivationDome: React.FC<ActivationDomeProps> = ({ onDomePress }
   return (
     <G onPress={onDomePress}>
       <Path
-        d="M0 0c-27.992 51.726-8.755 116.337 42.971 144.324 51.719 27.994 116.339 8.757 144.317-42.97 27.995-51.719 8.751-116.334-42.963-144.318C92.6-70.958 27.989-51.714 0 0"
+        d="M330.077 511.852c-35.456 -65.519 -11.09 -147.36 54.43 -182.81c65.511 -35.459 147.362 -11.092 182.801 54.429c35.46 65.511 11.085 147.356 -54.42 182.802C447.37 601.732 365.53 577.356 330.077 511.852"
         fill="url(#domeGradient)"
-        fillOpacity={1}
-        fillRule="nonzero"
-        stroke="none"
-        transform="translate(225.38 591.116)"
       />
       <Path
-        d="M0 0a104.644 104.644 0 0 1 2.72-5.407l-11.24-6.082a116.896 116.896 0 0 0-3.062 6.086z"
+        d="M333.751 501.151a132.549 132.549 0 0 0 3.445 6.849l-14.237 7.704a148.068 148.068 0 0 1 -3.879 -7.709z"
         fill={Colors.border.default}
-        fillOpacity={1}
-        fillRule="nonzero"
-        stroke="none"
-        transform="translate(228.28 599.564)"
       />
       <Path
-        d="M0 0a98.979 98.979 0 0 1 2.392-5.557L-9.189-10.96a110.894 110.894 0 0 0-2.696 6.261z"
+        d="M330.722 494.112a125.373 125.373 0 0 0 3.03 7.039L319.083 507.995a140.465 140.465 0 0 1 -3.415 -7.931z"
         fill={Colors.background.primary}
-        fillOpacity={1}
-        fillRule="nonzero"
-        stroke="none"
-        transform="translate(225.889 605.121)"
       />
     </G>
   );

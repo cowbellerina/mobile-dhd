@@ -8,774 +8,620 @@ export const DHDDomeRing: React.FC = React.memo(() => {
   return (
     <G>
                     <Path
-                        d="M0 0a132.218 132.218 0 0 0 9.189 10.96A101.772 101.772 0 0 1 14.301-.004"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(216.7 594.161)"
+                        d="M319.083 507.995a167.476 167.476 0 0 1 11.639 -13.883A128.911 128.911 0 0 0 337.197 508"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a99.058 99.058 0 0 1 2.052-5.687l-11.885-4.699a111.412 111.412 0 0 0-2.314 6.415z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(223.836 610.808)"
+                        d="M328.122 486.909a125.473 125.473 0 0 0 2.599 7.204l-15.054 5.952a141.122 141.122 0 0 1 -2.931 -8.126z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c.508-1.95 1.079-3.883 1.704-5.8l-12.148-3.971a113.706 113.706 0 0 0-1.922 6.544z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(222.133 616.607)"
+                        d="M325.964 479.563c0.643 2.47 1.367 4.918 2.158 7.347l-15.387 5.03a144.027 144.027 0 0 1 -2.435 -8.289z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.477 131.477 0 0 0 10.444 9.771A99.675 99.675 0 0 1 14.2-1.716"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(211.689 606.837)"
+                        d="M312.735 491.938a166.537 166.537 0 0 1 13.229 -12.377A126.255 126.255 0 0 0 330.722 494.112"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a102.46 102.46 0 0 1 1.348-5.892l-12.367-3.226a115.45 115.45 0 0 0-1.521 6.65z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(220.785 622.499)"
+                        d="M324.257 472.1a129.782 129.782 0 0 0 1.707 7.463l-15.665 4.086a146.236 146.236 0 0 1 -1.927 -8.423z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c.271-1.997.599-3.985.986-5.963l-12.54-2.468A116.106 116.106 0 0 0-12.667-1.7z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(219.8 628.462)"
+                        d="M323.009 464.547c0.343 2.53 0.759 5.048 1.249 7.553l-15.884 3.126A147.067 147.067 0 0 1 306.964 466.7z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.275 131.275 0 0 0 11.554 8.431 99.58 99.58 0 0 1 2.333-11.855"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(208.246 620.031)"
+                        d="M308.374 475.226a166.281 166.281 0 0 1 14.635 -10.679a126.134 126.134 0 0 0 2.955 15.016"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c.148-2.01.354-4.016.621-6.013l-12.666-1.7a115.23 115.23 0 0 0-.702 6.785z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(219.178 634.475)"
+                        d="M322.221 456.93c0.187 2.546 0.448 5.087 0.787 7.616l-16.044 2.153a145.958 145.958 0 0 1 -0.889 -8.594z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c.027-2.016.109-4.03.255-6.04l-12.746-.928a113.987 113.987 0 0 0-.288 6.815z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(218.923 640.515)"
+                        d="M321.898 449.28c0.034 2.554 0.138 5.105 0.323 7.651l-16.145 1.175a144.383 144.383 0 0 1 -0.365 -8.632z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.744 131.744 0 0 0 12.491 6.968 99.97 99.97 0 0 1 .877-12.053"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(206.432 633.547)"
+                        d="M306.076 458.106a166.875 166.875 0 0 1 15.822 -8.826a126.628 126.628 0 0 0 1.111 15.267"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c-.095-2.014-.135-4.03-.111-6.045l-12.779-.153c-.027 2.273.017 4.548.125 6.818z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(219.034 646.56)"
+                        d="M322.039 441.623c-0.12 2.551 -0.171 5.105 -0.141 7.657l-16.187 0.194c-0.034 -2.879 0.022 -5.761 0.158 -8.636z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a103.078 103.078 0 0 1-.476-6.028l-12.765.62c.111 2.27.293 4.538.537 6.798z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(219.51 652.588)"
+                        d="M322.642 433.987a130.565 130.565 0 0 0 -0.603 7.635l-16.169 -0.785c0.141 -2.875 0.371 -5.748 0.68 -8.611z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.067 132.067 0 0 0 13.241 5.408 100.412 100.412 0 0 1-.587-12.073"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(206.269 647.18)"
+                        d="M305.87 440.837a167.284 167.284 0 0 1 16.772 -6.85a127.188 127.188 0 0 0 -0.744 15.292"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a102.274 102.274 0 0 1-.838-5.989L-13.542-4.6c.247 2.26.564 4.511.944 6.752z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(220.348 658.577)"
+                        d="M323.703 426.401a129.547 129.547 0 0 0 -1.061 7.586L306.55 432.228c0.313 -2.863 0.714 -5.714 1.196 -8.553z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a103.867 103.867 0 0 1-1.197-5.93l-12.597 2.152c.383 2.24.835 4.469 1.348 6.682z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(221.544 664.507)"
+                        d="M325.218 418.89a131.565 131.565 0 0 0 -1.516 7.511l-15.956 -2.726c0.485 -2.837 1.058 -5.661 1.707 -8.464z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a133.036 133.036 0 0 0 13.794 3.778 101.023 101.023 0 0 1-2.035-11.919"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(207.75 660.729)"
+                        d="M307.746 423.675a168.512 168.512 0 0 1 17.472 -4.785a127.962 127.962 0 0 0 -2.578 15.097"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a104.352 104.352 0 0 1-1.551-5.847l-12.446 2.905c.519 2.213 1.102 4.41 1.748 6.588z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(223.095 670.354)"
+                        d="M327.183 411.484a132.179 132.179 0 0 0 -1.965 7.406l-15.765 -3.68c0.657 -2.803 1.396 -5.586 2.214 -8.345z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a105.111 105.111 0 0 1-1.899-5.743l-12.249 3.646a117.483 117.483 0 0 0 2.14 6.472z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(224.995 676.097)"
+                        d="M329.59 404.209a133.14 133.14 0 0 0 -2.405 7.274l-15.515 -4.618a148.811 148.811 0 0 1 2.711 -8.198z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0c4.734.962 9.457 1.66 14.148 2.097a101.384 101.384 0 0 1-3.45-11.59"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(210.847 674)"
+                        d="M311.669 406.866c5.996 -1.219 11.979 -2.103 17.921 -2.656a128.419 128.419 0 0 0 -4.37 14.681"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a103.799 103.799 0 0 1-2.241-5.619l-12.008 4.376a118.177 118.177 0 0 0 2.525 6.332z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(227.236 681.715)"
+                        d="M332.428 397.093a131.478 131.478 0 0 0 -2.839 7.117l-15.21 -5.543a149.69 149.69 0 0 1 3.198 -8.021z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.111 102.111 0 0 1-2.574-5.473L-14.298-.384a116.644 116.644 0 0 0 2.902 6.169z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(229.81 687.188)"
+                        d="M335.689 390.161a129.34 129.34 0 0 0 -3.26 6.932L317.578 390.647a147.749 147.749 0 0 1 3.676 -7.814z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.5 132.5 0 0 0 14.298.384 101.07 101.07 0 0 1-4.816-11.092"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(215.512 686.804)"
+                        d="M317.578 390.647a167.833 167.833 0 0 1 18.111 -0.486a128.022 128.022 0 0 0 -6.1 14.05"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a102.05 102.05 0 0 1-2.899-5.307L-14.295.478a115.478 115.478 0 0 0 3.269 5.984z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(232.709 692.495)"
+                        d="M339.361 383.439a129.263 129.263 0 0 0 -3.672 6.722L321.254 382.833a146.272 146.272 0 0 1 4.141 -7.58z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a101.223 101.223 0 0 1-3.213-5.122L-14.239 1.34a115 115 0 0 0 3.624 5.777z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(235.922 697.617)"
+                        d="M343.43 376.951a128.215 128.215 0 0 0 -4.07 6.488L325.394 375.253a145.666 145.666 0 0 1 4.59 -7.318z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0c4.827-.194 9.578-.642 14.239-1.34a100.514 100.514 0 0 1-6.112-10.429"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(221.683 698.957)"
+                        d="M325.394 375.253c6.114 0.246 12.132 0.813 18.036 1.697a127.317 127.317 0 0 0 -7.742 13.21"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a101.175 101.175 0 0 1-3.517-4.917l-10.615 7.118a115.504 115.504 0 0 0 3.968 5.547z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(239.44 702.533)"
+                        d="M347.887 370.724a128.155 128.155 0 0 0 -4.455 6.228l-13.446 -9.016a146.305 146.305 0 0 1 5.026 -7.026z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.643 102.643 0 0 1-3.809-4.694l-10.163 7.748a115.376 115.376 0 0 0 4.298 5.297z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(243.248 707.227)"
+                        d="M352.71 364.778a130.014 130.014 0 0 0 -4.825 5.946l-12.873 -9.814a146.143 146.143 0 0 1 5.444 -6.71z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.512 131.512 0 0 0 13.972-3.054 100.17 100.17 0 0 1-7.326-9.611"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(229.276 710.281)"
+                        d="M335.012 360.91a166.581 166.581 0 0 1 17.698 3.868a126.882 126.882 0 0 0 -9.28 12.174"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a103.033 103.033 0 0 1-4.086-4.453l-9.675 8.351a116.671 116.671 0 0 0 4.613 5.026z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(247.334 711.68)"
+                        d="M357.886 359.138a130.508 130.508 0 0 0 -5.176 5.64l-12.255 -10.578a147.783 147.783 0 0 1 5.843 -6.366z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.495 102.495 0 0 1-4.351-4.195l-9.148 8.924a115.488 115.488 0 0 0 4.911 4.736z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(251.685 715.875)"
+                        d="M363.397 353.824a129.827 129.827 0 0 0 -5.511 5.314l-11.587 -11.304a146.284 146.284 0 0 1 6.221 -5.999z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.188 131.188 0 0 0 13.499-4.729 99.662 99.662 0 0 1-8.437-8.648"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(238.186 720.604)"
+                        d="M346.298 347.834a166.171 166.171 0 0 1 17.099 5.99a126.238 126.238 0 0 0 -10.687 10.954"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a99.907 99.907 0 0 1-4.598-3.923l-8.588 9.465a113.953 113.953 0 0 0 5.189 4.427z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(256.284 719.798)"
+                        d="M369.222 348.855a126.549 126.549 0 0 0 -5.824 4.969l-10.878 -11.989a144.34 144.34 0 0 1 6.573 -5.608z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a98.148 98.148 0 0 1-4.829-3.639l-7.997 9.969a110.77 110.77 0 0 0 5.447 4.104z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(261.112 723.437)"
+                        d="M375.338 344.246a124.32 124.32 0 0 0 -6.117 4.609l-10.13 -12.627a140.308 140.308 0 0 1 6.9 -5.198z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.126 131.126 0 0 0 12.826-6.33 99.622 99.622 0 0 1-9.427-7.562"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(248.287 729.767)"
+                        d="M359.093 336.228a166.093 166.093 0 0 1 16.246 8.018a126.188 126.188 0 0 0 -11.941 9.579"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a98.424 98.424 0 0 1-5.042-3.343l-7.379 10.434a110.82 110.82 0 0 0 5.681 3.767z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(266.154 726.78)"
+                        d="M381.724 340.011a124.67 124.67 0 0 0 -6.387 4.234l-9.347 -13.216a140.372 140.372 0 0 1 7.196 -4.772z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a104.314 104.314 0 0 1-5.235-3.039l-6.74 10.858a116.069 116.069 0 0 0 5.892 3.42z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(271.389 729.818)"
+                        d="M388.355 336.163a132.131 132.131 0 0 0 -6.631 3.849l-8.537 -13.753a147.02 147.02 0 0 1 7.463 -4.332z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a134.489 134.489 0 0 0 11.975-7.819 101.573 101.573 0 0 1-10.277-6.382"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(259.414 737.638)"
+                        d="M373.187 326.258a170.352 170.352 0 0 1 15.168 9.904a128.659 128.659 0 0 0 -13.018 8.084"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a103.865 103.865 0 0 1-5.407-2.721l-6.083 11.24a116.475 116.475 0 0 0 6.085 3.062z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(276.796 732.54)"
+                        d="M395.204 332.715a131.562 131.562 0 0 0 -6.849 3.447l-7.705 -14.237a147.535 147.535 0 0 1 7.708 -3.879z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a97.919 97.919 0 0 1-5.556-2.393L-10.96 9.188c2.058.963 4.147 1.861 6.261 2.696z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(282.352 734.932)"
+                        d="M402.242 329.685a124.03 124.03 0 0 0 -7.038 3.031L388.359 318.047c2.607 -1.22 5.253 -2.357 7.931 -3.415z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.043 132.043 0 0 0 10.96-9.188A101.374 101.374 0 0 1-.002-14.302"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(271.391 744.12)"
+                        d="M388.358 318.047a167.254 167.254 0 0 1 13.883 11.638A128.407 128.407 0 0 0 388.355 336.163"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a98.796 98.796 0 0 1-5.687-2.053l-4.699 11.885c2.114.835 4.252 1.611 6.414 2.315z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(288.039 736.984)"
+                        d="M409.445 327.086a125.141 125.141 0 0 0 -7.204 2.6l-5.952 -15.054c2.678 -1.058 5.386 -2.041 8.124 -2.932z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c-1.95-.508-3.883-1.08-5.799-1.704l-3.972 12.147c2.162.705 4.343 1.349 6.544 1.923z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(293.838 738.688)"
+                        d="M416.79 324.928c-2.47 0.643 -4.918 1.368 -7.345 2.158l-5.031 -15.386c2.739 -0.893 5.501 -1.709 8.289 -2.436z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a130.925 130.925 0 0 0 9.771-10.443A99.597 99.597 0 0 1-1.715-14.2"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(284.066 749.131)"
+                        d="M404.413 311.7a165.838 165.838 0 0 1 12.377 13.228A126.156 126.156 0 0 0 402.24 329.687"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a102.46 102.46 0 0 1-5.892-1.348l-3.226 12.366a115.45 115.45 0 0 0 6.65 1.521z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(299.73 740.037)"
+                        d="M424.254 323.219a129.782 129.782 0 0 0 -7.463 1.707l-4.086 -15.664a146.236 146.236 0 0 1 8.423 -1.927z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a103.612 103.612 0 0 1-5.963-.986l-2.468 12.539c2.232.437 4.477.808 6.731 1.114z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(305.692 741.023)"
+                        d="M431.806 321.97a131.242 131.242 0 0 0 -7.553 1.249l-3.126 -15.883c2.827 -0.554 5.671 -1.023 8.526 -1.411z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.206 131.206 0 0 0 8.431-11.553 99.766 99.766 0 0 1-11.854-2.334"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(297.261 752.576)"
+                        d="M421.126 307.336a166.194 166.194 0 0 1 10.679 14.634a126.37 126.37 0 0 0 -15.015 2.956"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a101.78 101.78 0 0 1-6.013-.622l-1.7 12.667c2.254.301 4.517.534 6.785.701z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(311.705 741.644)"
+                        d="M439.422 321.183a128.921 128.921 0 0 0 -7.616 0.788l-2.153 -16.045c2.855 -0.381 5.722 -0.676 8.594 -0.888z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.27 102.27 0 0 1-6.039-.255l-.928 12.746c2.268.165 4.541.259 6.815.288z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(317.744 741.9)"
+                        d="M447.071 320.859a129.542 129.542 0 0 0 -7.649 0.323l-1.175 -16.145c2.873 -0.209 5.752 -0.328 8.632 -0.365z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.61 131.61 0 0 0 6.967-12.491 99.969 99.969 0 0 1-12.052-.877"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(310.777 754.39)"
+                        d="M438.246 305.038a166.706 166.706 0 0 1 8.825 15.822a126.627 126.627 0 0 0 -15.266 1.111"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c-2.014.095-4.03.135-6.046.11l-.152 12.78c2.273.027 4.547-.018 6.818-.125z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(323.79 741.79)"
+                        d="M454.73 320.998c-2.551 -0.12 -5.105 -0.171 -7.658 -0.139l-0.193 -16.188c2.879 -0.034 5.76 0.023 8.636 0.158z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c-2.005.216-4.016.378-6.028.476l.62 12.764c2.27-.11 4.537-.292 6.797-.536z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(329.818 741.313)"
+                        d="M462.365 321.603c-2.54 -0.274 -5.087 -0.479 -7.635 -0.603l0.785 -16.168c2.875 0.139 5.747 0.37 8.61 0.679z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.622 132.622 0 0 0 5.408-13.24c-4.009.437-8.043.634-12.074.586"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(324.41 754.554)"
+                        d="M455.515 304.831a167.987 167.987 0 0 1 6.85 16.771c-5.078 -0.554 -10.188 -0.803 -15.294 -0.742"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a103.25 103.25 0 0 1-5.989.838l1.388 12.704c2.26-.247 4.512-.565 6.752-.944z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(335.808 740.476)"
+                        d="M469.952 322.663a130.783 130.783 0 0 0 -7.586 -1.061l1.758 -16.092c2.863 0.313 5.715 0.716 8.553 1.196z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c-1.965.455-3.942.856-5.93 1.197l2.152 12.597c2.24-.383 4.468-.835 6.682-1.349z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(341.737 739.279)"
+                        d="M477.462 324.179c-2.489 -0.576 -4.993 -1.084 -7.511 -1.516l2.726 -15.956c2.837 0.485 5.659 1.058 8.464 1.709z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a133.036 133.036 0 0 0 3.778-13.794A101.262 101.262 0 0 1-8.141-11.76"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(337.959 753.073)"
+                        d="M472.677 306.707a168.512 168.512 0 0 1 4.785 17.472A128.265 128.265 0 0 0 462.365 321.603"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a104.581 104.581 0 0 1-5.847 1.551l2.905 12.445a116.944 116.944 0 0 0 6.588-1.747z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(347.584 737.728)"
+                        d="M484.869 326.144a132.469 132.469 0 0 0 -7.406 -1.965l3.68 -15.764a148.129 148.129 0 0 1 8.345 2.213z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a105.683 105.683 0 0 1-5.743 1.899l3.646 12.249a117.764 117.764 0 0 0 6.472-2.14z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(353.327 735.829)"
+                        d="M492.143 328.549a133.865 133.865 0 0 0 -7.274 -2.405l4.618 -15.515a149.167 149.167 0 0 1 8.198 2.711z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0c.962-4.734 1.66-9.457 2.097-14.148a101.384 101.384 0 0 1-11.59 3.45"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(351.23 749.977)"
+                        d="M489.487 310.628c1.219 5.996 2.103 11.979 2.656 17.921a128.419 128.419 0 0 0 -14.681 -4.37"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c-1.85.802-3.725 1.548-5.618 2.241l4.375 12.008a117.03 117.03 0 0 0 6.332-2.526z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(358.945 733.588)"
+                        d="M499.259 331.388c-2.343 -1.016 -4.718 -1.961 -7.116 -2.839l5.542 -15.21a148.238 148.238 0 0 1 8.021 3.2z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.142 102.142 0 0 1-5.474 2.574l5.089 11.723a115.474 115.474 0 0 0 6.169-2.901Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(364.419 731.014)"
+                        d="M506.193 334.648a129.38 129.38 0 0 0 -6.934 -3.26l6.446 -14.849a146.267 146.267 0 0 1 7.814 3.675Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0c.388-4.815.515-9.586.385-14.297a101.422 101.422 0 0 1-11.092 4.815"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(364.034 745.311)"
+                        d="M505.705 316.539c0.491 6.099 0.652 12.142 0.488 18.109a128.468 128.468 0 0 0 -14.05 -6.099"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a102.788 102.788 0 0 1-5.307 2.898L.478 14.294a115.462 115.462 0 0 0 5.984-3.268Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(369.726 728.115)"
+                        d="M512.915 338.32a130.198 130.198 0 0 0 -6.722 -3.671L513.521 320.214a146.252 146.252 0 0 1 7.58 4.139Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a101.929 101.929 0 0 1-5.121 3.214L1.341 14.24a114.99 114.99 0 0 0 5.776-3.625z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(374.847 724.901)"
+                        d="M519.402 342.391a129.11 129.11 0 0 0 -6.487 -4.071L521.1 324.354a145.654 145.654 0 0 1 7.316 4.592z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.65 131.65 0 0 0-1.341-14.24 100.582 100.582 0 0 1-10.428 6.113"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(376.188 739.141)"
+                        d="M521.1 324.354a166.756 166.756 0 0 1 -1.699 18.037a127.404 127.404 0 0 0 -13.209 -7.743"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a101.175 101.175 0 0 1-4.917 3.517L2.2 14.132a114.54 114.54 0 0 0 5.548-3.968z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(379.764 721.384)"
+                        d="M525.63 346.846a128.155 128.155 0 0 0 -6.228 -4.455L528.416 328.946a145.084 145.084 0 0 1 7.027 5.026z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a103.27 103.27 0 0 1-4.693 3.808l7.748 10.164a116.595 116.595 0 0 0 5.297-4.298Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(384.457 717.576)"
+                        d="M531.574 351.669a130.808 130.808 0 0 0 -5.944 -4.823l9.814 -12.874a147.687 147.687 0 0 1 6.71 5.444Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.074 131.074 0 0 0-3.055-13.972 99.907 99.907 0 0 1-9.61 7.326"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(387.512 731.548)"
+                        d="M535.444 333.972a166.027 166.027 0 0 1 -3.87 17.698a126.549 126.549 0 0 0 -12.173 -9.28"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a104.302 104.302 0 0 1-4.453 4.087l8.351 9.674a116.052 116.052 0 0 0 5.026-4.614z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(388.91 713.49)"
+                        d="M537.215 356.845a132.116 132.116 0 0 0 -5.64 -5.177l10.578 -12.254a146.999 146.999 0 0 1 6.366 5.844z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.494 102.494 0 0 1-4.194 4.351l8.923 9.148a114.31 114.31 0 0 0 4.736-4.912z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(393.104 709.138)"
+                        d="M542.527 362.358a129.825 129.825 0 0 0 -5.312 -5.511l11.302 -11.587a144.792 144.792 0 0 1 5.999 6.222z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.272 131.272 0 0 0-4.729-13.499 99.531 99.531 0 0 1-8.648 8.438"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(397.834 722.637)"
+                        d="M548.518 345.259a166.277 166.277 0 0 1 -5.99 17.099a126.072 126.072 0 0 0 -10.954 -10.688"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a99.907 99.907 0 0 1-3.923 4.598l9.465 8.588A113.881 113.881 0 0 0 9.97 7.997Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(397.027 704.54)"
+                        d="M547.496 368.182a126.549 126.549 0 0 0 -4.969 -5.824l11.989 -10.878A144.249 144.249 0 0 1 560.125 358.052Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a97.035 97.035 0 0 1-3.638 4.829l9.97 7.997a111.89 111.89 0 0 0 4.104-5.447z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(400.665 699.71)"
+                        d="M552.104 374.3a122.911 122.911 0 0 0 -4.608 -6.117l12.629 -10.13a141.727 141.727 0 0 1 5.198 6.9z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.138 131.138 0 0 0-6.332-12.826 99.593 99.593 0 0 1-7.561 9.428"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(406.997 712.537)"
+                        d="M560.125 358.052a166.108 166.108 0 0 1 -8.021 16.246a126.151 126.151 0 0 0 -9.577 -11.942"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a98.424 98.424 0 0 1-3.343 5.042L7.093 12.42c1.312-1.856 2.57-3.75 3.766-5.681z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(404.008 694.67)"
+                        d="M556.339 380.684a124.67 124.67 0 0 0 -4.234 -6.387L565.323 364.952c1.662 2.351 3.255 4.75 4.77 7.196z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a105.12 105.12 0 0 1-3.039 5.236L7.82 11.975a116.49 116.49 0 0 0 3.419-5.892z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(407.047 689.434)"
+                        d="M560.188 387.316a133.152 133.152 0 0 0 -3.849 -6.632L570.093 372.148a147.554 147.554 0 0 1 4.331 7.463z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a134.865 134.865 0 0 0-7.82-11.975 101.476 101.476 0 0 1-6.382 10.278"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(414.867 701.408)"
+                        d="M570.093 372.149a170.829 170.829 0 0 1 -9.905 15.168a128.536 128.536 0 0 0 -8.084 -13.019"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a104.294 104.294 0 0 1-2.721 5.408l11.24 6.082c1.078-1.995 2.1-4.027 3.062-6.085z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(409.768 684.026)"
+                        d="M563.635 394.166a132.105 132.105 0 0 0 -3.447 -6.85l14.237 -7.704c1.365 2.527 2.66 5.101 3.879 7.708z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a97.58 97.58 0 0 1-2.393 5.555L9.188 10.96a111.61 111.61 0 0 0 2.697-6.26Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(412.16 678.47)"
+                        d="M566.665 401.204a123.601 123.601 0 0 0 -3.031 -7.036L578.303 387.321a141.372 141.372 0 0 1 3.416 7.929Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.208 132.208 0 0 0-9.188-10.96A101.654 101.654 0 0 1-14.302.002"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(421.349 689.431)"
+                        d="M578.304 387.32a167.463 167.463 0 0 1 -11.638 13.883A128.761 128.761 0 0 0 560.188 387.317"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a98.05 98.05 0 0 1-2.053 5.687l11.885 4.7a110.665 110.665 0 0 0 2.314-6.415z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(414.213 672.784)"
+                        d="M569.265 408.406a124.196 124.196 0 0 0 -2.6 -7.204l15.054 -5.953a140.175 140.175 0 0 1 2.931 8.126z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c-.508 1.95-1.08 3.883-1.704 5.799l12.146 3.972a113.49 113.49 0 0 0 1.924-6.544z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(415.917 666.984)"
+                        d="M571.423 415.752c-0.643 -2.47 -1.368 -4.918 -2.158 -7.345l15.385 -5.031a143.754 143.754 0 0 1 2.437 8.289z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a130.913 130.913 0 0 0-10.442-9.771 99.985 99.985 0 0 1-3.757 11.486"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(426.36 676.756)"
+                        d="M584.651 403.375a165.823 165.823 0 0 1 -13.227 12.377a126.647 126.647 0 0 0 -4.759 -14.549"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a102.46 102.46 0 0 1-1.348 5.892l12.367 3.227c.572-2.202 1.08-4.419 1.521-6.651Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(417.265 661.093)"
+                        d="M573.131 423.214a129.782 129.782 0 0 0 -1.707 -7.463l15.665 -4.088c0.725 2.789 1.368 5.597 1.927 8.425Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c-.271 1.997-.6 3.985-.986 5.963l12.54 2.468c.436-2.232.807-4.476 1.112-6.731Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(418.251 655.13)"
+                        d="M574.38 430.768c-0.343 -2.53 -0.76 -5.048 -1.249 -7.553l15.884 -3.126c0.552 2.827 1.022 5.67 1.409 8.526Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.22 131.22 0 0 0-11.554-8.431 99.527 99.527 0 0 1-2.334 11.854"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(429.805 663.561)"
+                        d="M589.015 420.088a166.212 166.212 0 0 1 -14.635 10.679a126.067 126.067 0 0 0 -2.956 -15.015"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a101.83 101.83 0 0 1-.621 6.012l12.666 1.7c.302-2.254.534-4.517.701-6.785z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(418.872 649.118)"
+                        d="M575.166 438.383a128.984 128.984 0 0 0 -0.787 -7.615l16.044 -2.153c0.383 2.855 0.676 5.722 0.888 8.594z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a101.454 101.454 0 0 1-.256 6.04l12.746.927c.165-2.268.259-4.541.289-6.815z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(419.128 643.078)"
+                        d="M575.491 446.033a128.508 128.508 0 0 0 -0.324 -7.651l16.145 -1.174c0.209 2.873 0.328 5.752 0.366 8.632z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.719 131.719 0 0 0-12.49-6.967 100.158 100.158 0 0 1-.877 12.052"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(431.618 650.045)"
+                        d="M591.311 437.208a166.844 166.844 0 0 1 -15.821 8.825a126.866 126.866 0 0 0 -1.111 -15.266"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c.096 2.014.136 4.029.111 6.045l12.78.152c.027-2.273-.018-4.547-.125-6.818Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(419.017 637.033)"
+                        d="M575.35 453.69c0.122 -2.551 0.172 -5.103 0.141 -7.657l16.188 -0.193c0.034 2.879 -0.023 5.76 -0.158 8.636Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c.217 2.004.378 4.015.476 6.028l12.765-.621c-.11-2.27-.293-4.537-.537-6.797Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(418.541 631.005)"
+                        d="M574.747 461.326c0.275 -2.538 0.479 -5.086 0.603 -7.635l16.169 0.787c-0.139 2.875 -0.371 5.747 -0.68 8.61Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.294 132.294 0 0 0-13.241-5.407c.437 4.008.634 8.042.587 12.073"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(431.782 636.412)"
+                        d="M591.519 454.477a167.572 167.572 0 0 1 -16.772 6.849c0.554 -5.077 0.803 -10.187 0.744 -15.292"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c.337 1.988.619 3.985.838 5.99l12.704-1.389c-.247-2.26-.564-4.512-.944-6.752Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(417.703 625.015)"
+                        d="M573.686 468.913c0.427 -2.518 0.784 -5.048 1.061 -7.587l16.092 1.759c-0.313 2.863 -0.714 5.715 -1.196 8.553Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c.456 1.964.857 3.941 1.197 5.929l12.598-2.152c-.384-2.24-.835-4.468-1.349-6.682Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(416.506 619.086)"
+                        d="M572.17 476.423c0.578 -2.488 1.086 -4.992 1.516 -7.51l15.957 2.726c-0.486 2.837 -1.058 5.659 -1.709 8.464Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.729 132.729 0 0 0-13.795-3.777c.915 3.927 1.597 7.91 2.035 11.919"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(430.3 622.863)"
+                        d="M589.642 471.639a168.123 168.123 0 0 1 -17.474 4.784c1.159 -4.974 2.023 -10.019 2.578 -15.097"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a104.385 104.385 0 0 1 1.551 5.848l12.446-2.906a117.18 117.18 0 0 0-1.748-6.588Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(414.955 613.238)"
+                        d="M570.205 483.831a132.221 132.221 0 0 0 1.965 -7.407l15.765 3.681a148.428 148.428 0 0 1 -2.214 8.345Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a104.82 104.82 0 0 1 1.899 5.743l12.249-3.646a117.764 117.764 0 0 0-2.14-6.472z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(413.056 607.495)"
+                        d="M567.8 491.105a132.772 132.772 0 0 0 2.405 -7.274l15.515 4.618a149.167 149.167 0 0 1 -2.711 8.198z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a133.224 133.224 0 0 0-14.148-2.097 101.198 101.198 0 0 1 3.45 11.591"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(427.204 609.592)"
+                        d="M585.72 488.449a168.75 168.75 0 0 1 -17.921 2.656a128.184 128.184 0 0 0 4.37 -14.682"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c.802 1.85 1.548 3.725 2.24 5.618l12.008-4.375a117.005 117.005 0 0 0-2.524-6.332z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(410.815 601.877)"
+                        d="M564.961 498.221c1.016 -2.343 1.961 -4.718 2.837 -7.116l15.21 5.542a148.206 148.206 0 0 1 -3.197 8.021z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a103.292 103.292 0 0 1 2.574 5.474L14.298.385a116.225 116.225 0 0 0-2.902-6.169Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(408.241 596.403)"
+                        d="M561.701 505.155a130.836 130.836 0 0 0 3.26 -6.934L579.811 504.667a147.218 147.218 0 0 1 -3.676 7.814Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.503 132.503 0 0 0-14.298-.385 101.23 101.23 0 0 1 4.815 11.092"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(422.54 596.788)"
+                        d="M579.813 504.667a167.837 167.837 0 0 1 -18.111 0.488a128.224 128.224 0 0 0 6.099 -14.05"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a102.033 102.033 0 0 1 2.898 5.307L14.294-.478a115.12 115.12 0 0 0-3.268-5.984Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(405.343 591.097)"
+                        d="M558.03 511.876a129.241 129.241 0 0 0 3.671 -6.722L576.135 512.481a145.818 145.818 0 0 1 -4.139 7.58Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a101.957 101.957 0 0 1 3.214 5.122L14.24-1.34a114.272 114.272 0 0 0-3.625-5.776Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(402.129 585.975)"
+                        d="M553.959 518.364a129.145 129.145 0 0 0 4.071 -6.488L571.996 520.061a144.744 144.744 0 0 1 -4.592 7.316Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.88 131.88 0 0 0-14.24 1.34 100.41 100.41 0 0 1 6.112 10.429"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(416.37 584.635)"
+                        d="M571.997 520.061a167.048 167.048 0 0 1 -18.037 -1.697a127.186 127.186 0 0 0 7.742 -13.21"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a102.162 102.162 0 0 1 3.517 4.917l10.615-7.116a114.54 114.54 0 0 0-3.968-5.548z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(398.612 581.058)"
+                        d="M549.504 524.592a129.405 129.405 0 0 0 4.455 -6.228l13.446 9.014a145.084 145.084 0 0 1 -5.026 7.027z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a103.164 103.164 0 0 1 3.809 4.693l10.164-7.747a116.595 116.595 0 0 0-4.298-5.297Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(394.804 576.364)"
+                        d="M544.68 530.538a130.674 130.674 0 0 0 4.825 -5.944l12.874 9.813a147.687 147.687 0 0 1 -5.444 6.71Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.091 131.091 0 0 0-13.973 3.054 100.032 100.032 0 0 1 7.326 9.61"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(408.776 573.31)"
+                        d="M562.378 534.406a166.048 166.048 0 0 1 -17.699 -3.868a126.707 126.707 0 0 0 9.28 -12.173"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a103.625 103.625 0 0 1 4.086 4.453l9.675-8.35a116.643 116.643 0 0 0-4.613-5.027z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(390.718 571.911)"
+                        d="M539.505 536.178a131.258 131.258 0 0 0 5.176 -5.64l12.255 10.577a147.747 147.747 0 0 1 -5.843 6.368z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a103.12 103.12 0 0 1 4.351 4.195l9.148-8.924a115.465 115.465 0 0 0-4.911-4.735z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(386.367 567.716)"
+                        d="M533.994 541.492a130.618 130.618 0 0 0 5.511 -5.314l11.587 11.304a146.255 146.255 0 0 1 -6.221 5.998z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.105 131.105 0 0 0-13.499 4.729 99.508 99.508 0 0 1 8.436 8.648"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(399.866 562.987)"
+                        d="M551.092 547.482a166.066 166.066 0 0 1 -17.099 -5.99a126.043 126.043 0 0 0 10.686 -10.954"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a100.982 100.982 0 0 1 4.598 3.923l8.588-9.464a113.341 113.341 0 0 0-5.189-4.428Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(381.77 563.793)"
+                        d="M528.171 546.461a127.91 127.91 0 0 0 5.824 -4.969l10.878 11.988a143.565 143.565 0 0 1 -6.573 5.609Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a97.054 97.054 0 0 1 4.829 3.639l7.997-9.969a110.765 110.765 0 0 0-5.446-4.105Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(376.94 560.154)"
+                        d="M522.053 551.07a122.935 122.935 0 0 0 6.117 -4.609l10.13 12.627a140.302 140.302 0 0 1 -6.898 5.2Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.126 131.126 0 0 0-12.826 6.33 99.749 99.749 0 0 1 9.427 7.562"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(389.767 553.824)"
+                        d="M538.3 559.088a166.093 166.093 0 0 1 -16.246 -8.018a126.348 126.348 0 0 0 11.941 -9.579"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a97.96 97.96 0 0 1 5.041 3.343l7.38-10.435a110.614 110.614 0 0 0-5.682-3.766Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(371.9 556.812)"
+                        d="M515.669 555.303a124.082 124.082 0 0 0 6.385 -4.234l9.348 13.218a140.111 140.111 0 0 1 -7.197 4.77Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c1.774.962 3.52 1.976 5.234 3.039l6.74-10.858a115.651 115.651 0 0 0-5.892-3.421Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(366.665 553.773)"
+                        d="M509.038 559.153c2.247 -1.219 4.459 -2.503 6.63 -3.849l8.537 13.753a146.491 146.491 0 0 1 -7.463 4.333Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a134.25 134.25 0 0 0-11.974 7.819 101.491 101.491 0 0 1 10.276 6.382"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(378.639 545.953)"
+                        d="M524.205 569.058a170.05 170.05 0 0 1 -15.167 -9.904a128.555 128.555 0 0 0 13.016 -8.084"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c1.828.854 3.631 1.761 5.408 2.721L11.49-8.52a116.098 116.098 0 0 0-6.086-3.061z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(361.257 551.052)"
+                        d="M502.188 562.599c2.315 -1.082 4.599 -2.231 6.85 -3.447L516.742 573.391a147.057 147.057 0 0 1 -7.709 3.877z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a97.19 97.19 0 0 1 5.556 2.392L10.96-9.189a110.894 110.894 0 0 0-6.261-2.696Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(355.701 548.66)"
+                        d="M495.15 565.629a123.107 123.107 0 0 0 7.038 -3.03L509.033 577.269a140.465 140.465 0 0 1 -7.931 3.415Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.218 132.218 0 0 0-10.96 9.189A101.588 101.588 0 0 1 .004 14.302"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(366.661 539.47)"
+                        d="M509.033 577.27a167.476 167.476 0 0 1 -13.883 -11.639A128.678 128.678 0 0 0 509.038 559.154"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a98.318 98.318 0 0 1 5.687 2.053l4.699-11.885a111.423 111.423 0 0 0-6.415-2.315Z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(350.015 546.607)"
+                        d="M487.948 568.23a124.536 124.536 0 0 0 7.204 -2.6l5.952 15.054a141.135 141.135 0 0 1 -8.126 2.932Z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a101.02 101.02 0 0 1 5.8 1.703l3.971-12.147a113.738 113.738 0 0 0-6.545-1.922Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(344.215 544.904)"
+                        d="M480.601 570.387a127.958 127.958 0 0 0 7.347 -2.157l5.03 15.386a144.068 144.068 0 0 1 -8.29 2.435Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.477 131.477 0 0 0-9.771 10.444A99.738 99.738 0 0 1 1.716 14.2"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(353.985 534.46)"
+                        d="M492.976 583.616a166.537 166.537 0 0 1 -12.377 -13.229A126.334 126.334 0 0 0 495.15 565.629"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c1.977.391 3.941.841 5.892 1.348l3.225-12.367c-2.2-.572-4.419-1.08-6.649-1.521z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(338.323 543.557)"
+                        d="M473.138 572.093c2.504 -0.495 4.992 -1.065 7.463 -1.707l4.085 15.665c-2.787 0.725 -5.597 1.368 -8.422 1.927z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c1.997.271 3.985.6 5.963.986l2.468-12.54A117.107 117.107 0 0 0 1.7-12.666Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(332.36 542.57)"
+                        d="M465.585 573.343c2.53 -0.343 5.048 -0.76 7.553 -1.249l3.126 15.884A148.335 148.335 0 0 1 467.738 589.387Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.424 131.424 0 0 0-8.431 11.554 99.583 99.583 0 0 1 11.855 2.334"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(340.791 531.017)"
+                        d="M476.264 587.977a166.47 166.47 0 0 1 -10.679 -14.635a126.138 126.138 0 0 0 15.016 -2.956"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c2.01.148 4.016.354 6.013.621l1.7-12.666a114.469 114.469 0 0 0-6.785-.701z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(326.348 541.95)"
+                        d="M457.97 574.128c2.546 -0.187 5.087 -0.448 7.616 -0.787l2.153 16.044a144.994 144.994 0 0 1 -8.594 0.888z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c2.015.026 4.029.109 6.039.255l.928-12.746a114.83 114.83 0 0 0-6.815-.288Z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(320.309 541.694)"
+                        d="M450.32 574.453c2.552 -0.033 5.103 -0.138 7.649 -0.323l1.175 16.145a145.451 145.451 0 0 1 -8.632 0.365Z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.512 131.512 0 0 0-6.967 12.491c4.03.049 8.058.342 12.052.876"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(327.275 529.203)"
+                        d="M459.144 590.275a166.581 166.581 0 0 1 -8.825 -15.822c5.105 -0.062 10.207 -0.433 15.266 -1.11"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c2.014-.095 4.03-.135 6.046-.11l.152-12.78c-2.274-.027-4.548.018-6.819.125z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(314.263 541.805)"
+                        d="M442.662 574.312c2.551 0.12 5.105 0.171 7.658 0.139l0.193 16.188c-2.88 0.034 -5.761 -0.023 -8.637 -0.158z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.22 102.22 0 0 1 6.028-.477l-.621-12.764c-2.27.11-4.537.293-6.797.537z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(308.234 542.281)"
+                        d="M435.025 573.709a129.478 129.478 0 0 0 7.635 0.604l-0.787 16.168c-2.875 -0.139 -5.747 -0.371 -8.61 -0.68z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.294 132.294 0 0 0-5.407 13.241c4.009-.437 8.043-.635 12.074-.587"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(313.642 529.04)"
+                        d="M441.875 590.481a167.572 167.572 0 0 1 -6.849 -16.772c5.078 0.554 10.188 0.804 15.294 0.744"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a103.13 103.13 0 0 1 5.989-.838L4.6-13.542c-2.26.247-4.511.564-6.752.944z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(302.245 543.12)"
+                        d="M427.439 572.646a130.631 130.631 0 0 0 7.586 1.061L433.266 589.8c-2.863 -0.313 -5.714 -0.714 -8.553 -1.196z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0c1.965-.455 3.942-.856 5.93-1.197L3.777-13.795c-2.24.384-4.468.836-6.682 1.35z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(296.315 544.316)"
+                        d="M419.928 571.132c2.489 0.576 4.993 1.084 7.511 1.516L424.712 588.605c-2.837 -0.486 -5.659 -1.059 -8.464 -1.71z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.729 132.729 0 0 0-3.777 13.795c3.928-.915 7.91-1.596 11.919-2.035"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(300.093 530.521)"
+                        d="M424.713 588.605a168.123 168.123 0 0 1 -4.784 -17.474c4.975 1.159 10.019 2.022 15.097 2.578"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a105.221 105.221 0 0 1 5.847-1.551L2.942-13.996c-2.213.517-4.41 1.101-6.588 1.747z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(290.469 545.867)"
+                        d="M412.523 569.167a133.28 133.28 0 0 0 7.406 1.965L416.25 586.895c-2.803 -0.655 -5.586 -1.395 -8.345 -2.213z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a105.111 105.111 0 0 1 5.743-1.899L2.097-14.148a117.205 117.205 0 0 0-6.472 2.14z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(284.726 547.767)"
+                        d="M405.249 566.76a133.14 133.14 0 0 0 7.274 2.405L407.905 584.681a148.459 148.459 0 0 1 -8.198 -2.711z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a133.005 133.005 0 0 0-2.097 14.148 101.384 101.384 0 0 1 11.59-3.45"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(286.822 533.618)"
+                        d="M407.904 584.682a168.473 168.473 0 0 1 -2.656 -17.921a128.419 128.419 0 0 0 14.681 4.37"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0c1.85-.803 3.725-1.548 5.619-2.241L1.243-14.249a117.346 117.346 0 0 0-6.332 2.525z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(279.107 550.008)"
+                        d="M398.131 563.922c2.343 1.017 4.718 1.961 7.117 2.839L399.706 581.97a148.638 148.638 0 0 1 -8.021 -3.198z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.476 102.476 0 0 1 5.473-2.574L.384-14.298a116.225 116.225 0 0 0-6.169 2.902z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(273.634 552.582)"
+                        d="M391.199 560.661a129.803 129.803 0 0 0 6.932 3.26L391.685 578.772a147.218 147.218 0 0 1 -7.814 -3.676z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a132.5 132.5 0 0 0-.384 14.298 101.07 101.07 0 0 1 11.092-4.816"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(274.018 538.284)"
+                        d="M391.685 578.772a167.833 167.833 0 0 1 -0.486 -18.111a128.022 128.022 0 0 0 14.05 6.1"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a102.033 102.033 0 0 1 5.307-2.898L-.478-14.295a115.892 115.892 0 0 0-5.984 3.269z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(268.327 555.48)"
+                        d="M384.477 556.991a129.241 129.241 0 0 0 6.722 3.671L383.871 575.097a146.796 146.796 0 0 1 -7.58 -4.141z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a101.957 101.957 0 0 1 5.122-3.214L-1.34-14.24a114.3 114.3 0 0 0-5.777 3.625z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(263.205 558.694)"
+                        d="M377.989 552.919a129.145 129.145 0 0 0 6.488 4.071L376.291 570.957a144.78 144.78 0 0 1 -7.318 -4.592z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0c.194 4.827.642 9.579 1.34 14.24a100.514 100.514 0 0 1 10.429-6.112"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(261.865 544.454)"
+                        d="M376.291 570.957c0.246 -6.114 0.813 -12.133 1.697 -18.037a127.317 127.317 0 0 0 13.21 7.742"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a101.175 101.175 0 0 1 4.917-3.517L-2.2-14.132a114.316 114.316 0 0 0-5.547 3.968z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(258.288 562.21)"
+                        d="M371.761 548.466a128.155 128.155 0 0 0 6.228 4.455L368.974 566.366a144.8 144.8 0 0 1 -7.026 -5.026z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.643 102.643 0 0 1 4.694-3.809l-7.747-10.164a115.402 115.402 0 0 0-5.298 4.298z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(253.594 566.02)"
+                        d="M365.815 543.64a130.014 130.014 0 0 0 5.946 4.825l-9.813 12.874a146.176 146.176 0 0 1 -6.711 -5.444z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.335 131.335 0 0 0 3.053 13.973 100.006 100.006 0 0 1 9.611-7.326"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(250.541 552.047)"
+                        d="M361.948 561.339a166.357 166.357 0 0 1 3.867 -17.699a126.674 126.674 0 0 0 12.174 9.28"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a103.033 103.033 0 0 1 4.453-4.086l-8.35-9.675a116.054 116.054 0 0 0-5.027 4.613z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(249.141 570.106)"
+                        d="M360.174 538.464a130.508 130.508 0 0 0 5.64 5.176l-10.577 12.255a147.001 147.001 0 0 1 -6.368 -5.843z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.495 102.495 0 0 1 4.195-4.351l-8.924-9.148a116.668 116.668 0 0 0-4.735 4.91z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(244.946 574.456)"
+                        d="M354.861 532.954a129.827 129.827 0 0 0 5.314 5.511l-11.304 11.587a147.779 147.779 0 0 1 -5.998 -6.219z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a130.951 130.951 0 0 0 4.729 13.499 99.367 99.367 0 0 1 8.648-8.436"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(240.217 560.957)"
+                        d="M348.871 550.053a165.871 165.871 0 0 1 5.99 -17.099a125.865 125.865 0 0 0 10.954 10.686"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a101.004 101.004 0 0 1 3.924-4.598l-9.464-8.589a113.881 113.881 0 0 0-4.428 5.189z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(241.022 579.054)"
+                        d="M349.89 527.13a127.938 127.938 0 0 0 4.97 5.824l-11.988 10.879a144.249 144.249 0 0 1 -5.609 -6.573z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a97.675 97.675 0 0 1 3.639-4.829l-9.968-7.998a110.765 110.765 0 0 0-4.105 5.446z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(237.383 583.883)"
+                        d="M345.281 521.013a123.721 123.721 0 0 0 4.609 6.117l-12.626 10.131a140.302 140.302 0 0 1 -5.2 -6.898z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a131.137 131.137 0 0 0 6.329 12.827A99.76 99.76 0 0 1 13.892 3.4"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(231.054 571.056)"
+                        d="M337.264 537.261a166.106 166.106 0 0 1 8.017 -16.247A126.362 126.362 0 0 0 354.861 532.954"
+                        fill="url(#brushedMetal)"
                     />
                     <Path
-                        d="M0 0a97.527 97.527 0 0 1 3.343-5.041L-7.09-12.422a111.06 111.06 0 0 0-3.768 5.681z"
-                        fill="#333" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(234.04 588.924)"
+                        d="M341.047 514.628a123.534 123.534 0 0 0 4.234 6.385L332.066 530.363a140.676 140.676 0 0 1 -4.773 -7.196z"
+                        fill="#333"
                     />
                     <Path
-                        d="M0 0a102.784 102.784 0 0 1 3.04-5.234l-10.858-6.742a116.844 116.844 0 0 0-3.421 5.892z"
-                        fill="#1a1a1a" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(231 594.158)"
+                        d="M337.196 507.999a130.193 130.193 0 0 0 3.851 6.63l-13.753 8.54a148.002 148.002 0 0 1 -4.333 -7.463z"
+                        fill="#1a1a1a"
                     />
                     <Path
-                        d="M0 0a134.276 134.276 0 0 0 7.818 11.976A101.568 101.568 0 0 1 14.201 1.7"
-                        fill="url(#brushedMetal)" fillOpacity={1} fillRule="nonzero" stroke="none"
-                        transform="translate(223.182 582.183)"
+                        d="M327.293 523.167a170.083 170.083 0 0 1 9.903 -15.17A128.652 128.652 0 0 0 345.281 521.013"
+                        fill="url(#brushedMetal)"
                     />
     </G>
   );
