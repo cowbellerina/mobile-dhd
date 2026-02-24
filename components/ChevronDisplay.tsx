@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ViewStyle } from 'react-native';
 import { Colors, Spacing, Layout } from '@/constants/Theme';
 import { GLYPH_COMPONENT_MAP, ChevronPlaceholder } from '@/components/chevrons';
 
@@ -9,6 +9,8 @@ import { GLYPH_COMPONENT_MAP, ChevronPlaceholder } from '@/components/chevrons';
 interface ChevronDisplayProps {
   /** Array of glyph slugs to display in the chevron slots */
   glyphSlugs: string[];
+  /** Optional style override for the container */
+  style?: ViewStyle;
 }
 
 const Chevron = React.memo(({ slug, index }: { slug?: string; index: number }) => {
@@ -39,9 +41,9 @@ const Chevron = React.memo(({ slug, index }: { slug?: string; index: number }) =
 
 Chevron.displayName = 'Chevron';
 
-export default function ChevronDisplay({ glyphSlugs }: ChevronDisplayProps) {
+export default function ChevronDisplay({ glyphSlugs, style }: ChevronDisplayProps) {
   return (
-    <View style={styles.container} testID="chevron-display">
+    <View style={[styles.container, style]} testID="chevron-display">
       {Array.from({ length: Layout.chevron.count }).map((_, index) => (
         <Chevron
           key={index}

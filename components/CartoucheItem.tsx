@@ -4,6 +4,7 @@ import { Swipeable } from 'react-native-gesture-handler';
 import { CartoucheEntry } from '../types';
 import { Ionicons } from '@expo/vector-icons';
 import { Colors, Spacing, FontSize } from '@/constants/Theme';
+import ChevronDisplay from '@/components/ChevronDisplay';
 
 /**
  * Props for the CartoucheItem component
@@ -76,10 +77,10 @@ const CartoucheItem = ({ entry, onDelete, onReDial }: CartoucheItemProps) => {
       testID={`cartouche-item-${entry.id}`}
     >
       <View style={styles.container}>
+        <ChevronDisplay glyphSlugs={entry.dialingSequence} style={styles.chevrons} />
         <View style={styles.info}>
           <Text style={styles.name}>{entry.name}</Text>
           <Text style={styles.phone}>{entry.phoneNumber}</Text>
-          <Text style={styles.sequence}>{entry.dialingSequence.join(' - ')}</Text>
         </View>
       </View>
     </Swipeable>
@@ -92,29 +93,29 @@ export default React.memo(CartoucheItem, (prevProps, nextProps) => {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    padding: Spacing.md,
+    flexDirection: 'column',
     borderBottomWidth: 1,
     borderBottomColor: Colors.border.default,
-    alignItems: 'center',
     backgroundColor: Colors.background.secondary,
   },
+  chevrons: {
+    paddingVertical: Spacing.sm,
+  },
   info: {
-    flex: 1,
+    paddingHorizontal: Spacing.md,
+    paddingBottom: Spacing.sm,
+    alignItems: 'center',
   },
   name: {
     color: Colors.text.primary,
     fontWeight: 'bold',
     fontSize: FontSize.md,
+    textAlign: 'center',
   },
   phone: {
     color: Colors.text.tertiary,
     marginTop: Spacing.xs,
-  },
-  sequence: {
-    color: Colors.text.quaternary,
-    fontSize: FontSize.xs,
-    marginTop: Spacing.xs,
+    textAlign: 'center',
   },
   deleteAction: {
     backgroundColor: Colors.status.error,
