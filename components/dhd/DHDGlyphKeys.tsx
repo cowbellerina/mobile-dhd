@@ -5,7 +5,7 @@ import {DHDKey} from './DHDKey';
 
 const ShadowPath: React.FC<PathProps> = (props) => (
     <G>
-        <Path {...props} fill="#363636" transform="translate(2, 2)" />
+        <Path {...props} fill="url(#metallicKey)" transform="translate(2, 2)" />
         <Path {...props} />
     </G>
 );
