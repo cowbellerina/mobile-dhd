@@ -6,7 +6,7 @@ distant planets, this DHD connects you to your contacts via the primitive Tau'ri
 
 | Dialing | Unknown Address | Saved | Cartouche |
 |:---:|:---:|:---:|:---:|
-| <a href="./docs/screenshots/iPhone -02 - DHD - dial.png"><img src="./docs/screenshots/iPhone - 02 - DHD - dial.png" width="160"></a> | <a href="./docs/screenshots/iPhone - 03 - DHD - unknown.png"><img src="./docs/screenshots/iPhone - 03 - DHD - unknown.png" width="160"></a> | <a href="./docs/screenshots/iPhone - 04 - DHD - save.png"><img src="./docs/screenshots/iPhone - 04 - DHD - save.png" width="160"></a> | <a href="./docs/screenshots/iPhone - 05 - Cartouche - default.png"><img src="./docs/screenshots/iPhone - 05 - Cartouche - default.png" width="160"></a> |
+| <a href="./docs/screenshots/iPhone - 02 - DHD - dial.png"><img src="./docs/screenshots/iPhone - 02 - DHD - dial.png" width="160"></a> | <a href="./docs/screenshots/iPhone - 03 - DHD - unknown.png"><img src="./docs/screenshots/iPhone - 03 - DHD - unknown.png" width="160"></a> | <a href="./docs/screenshots/iPhone - 04 - DHD - save.png"><img src="./docs/screenshots/iPhone - 04 - DHD - save.png" width="160"></a> | <a href="./docs/screenshots/iPhone - 05 - Cartouche - default.png"><img src="./docs/screenshots/iPhone - 05 - Cartouche - default.png" width="160"></a> |
 
 ## Technology Stack
 
