@@ -134,7 +134,7 @@ export const Layout = {
     elevation: 5,
   },
   itemHeight: {
-    cartouche: 88, // Estimated, adjust based on actual rendering
+    cartouche: 110, // Glyph display (50) + name/phone text + padding
   },
   flatList: {
     maxToRenderPerBatch: 10,

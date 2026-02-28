@@ -17,12 +17,14 @@ describe('CartoucheItem', () => {
   };
 
   it('renders correctly', () => {
-    const { getByText } = render(
+    const { getByText, getByTestId } = render(
       <CartoucheItem entry={mockEntry} onDelete={() => {}} onReDial={() => {}} />
     );
     expect(getByText('Test Name')).toBeTruthy();
     expect(getByText('555-0000')).toBeTruthy();
-    expect(getByText('glyph1 - glyph2 - glyph3 - glyph4 - glyph5 - glyph6 - glyph7')).toBeTruthy();
+    expect(getByTestId('chevron-display')).toBeTruthy();
+    expect(getByTestId('chevron-glyph-glyph1')).toBeTruthy();
+    expect(getByTestId('chevron-glyph-glyph7')).toBeTruthy();
   });
 
   it('calls onDelete when delete button is pressed', () => {
@@ -56,16 +58,19 @@ describe('CartoucheItem', () => {
     expect(getByTestId('redial-btn-123')).toBeTruthy();
   });
 
-  it('displays sequence with correct separator', () => {
+  it('displays sequence as glyphs in chevron display', () => {
     const shortEntry: CartoucheEntry = {
       id: '456',
       name: 'Short',
       phoneNumber: '555-1111',
       dialingSequence: ['a', 'b', 'c'],
     };
-    const { getByText } = render(
+    const { getByTestId } = render(
       <CartoucheItem entry={shortEntry} onDelete={() => {}} onReDial={() => {}} />
     );
-    expect(getByText('a - b - c')).toBeTruthy();
+    expect(getByTestId('chevron-display')).toBeTruthy();
+    expect(getByTestId('chevron-glyph-a')).toBeTruthy();
+    expect(getByTestId('chevron-glyph-b')).toBeTruthy();
+    expect(getByTestId('chevron-glyph-c')).toBeTruthy();
   });
 });

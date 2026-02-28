@@ -1,6 +1,6 @@
 import React from 'react';
 import { ViewStyle } from 'react-native';
-import Svg, { G } from 'react-native-svg';
+import Svg from 'react-native-svg';
 import { DHDDefs } from './dhd/DHDDefs';
 import { DHDBackground } from './dhd/DHDBackground';
 import { DHDDomeRing } from './dhd/DHDDomeRing';
