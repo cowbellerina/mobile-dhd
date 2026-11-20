@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- The DHD key keystone from the original icon, made symmetric. -->
+  <path d="M 120.4 184.6 Q 512 128.4 903.6 184.6 L 792.6 858.2 Q 512 820.8 231.4 858.2 Z"
+        fill="none" stroke="#FFFFFF" stroke-width="33" stroke-linejoin="miter"/>
+</svg>

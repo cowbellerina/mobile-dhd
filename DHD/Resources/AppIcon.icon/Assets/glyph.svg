@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- The point of origin: a ring over a notched chevron. -->
+  <circle cx="512" cy="376" r="50" fill="none" stroke="#FFFFFF" stroke-width="34"/>
+  <path d="M 512 443 L 310.75 713 L 436 713 L 397 657 L 512 503.3 L 627 657 L 588 713 L 713.25 713 Z" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,5 @@
+// Signing settings shared by all targets. The Apple Developer Team ID is not committed:
+// copy Signing.local.xcconfig.example to Signing.local.xcconfig and set DEVELOPMENT_TEAM there.
+CODE_SIGN_STYLE = Automatic
+
+#include? "Signing.local.xcconfig"

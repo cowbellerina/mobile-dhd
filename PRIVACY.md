@@ -1,20 +1,18 @@
 # Privacy Policy
 
-Last updated: February 08, 2026
+Last updated: <!-- set on publication -->
 
 ## Overview
 
 DHD ("Dial Home Device") is an offline mobile application. It does not collect, transmit, or share any personal data. No data ever leaves your device.
 
-## Contacts Access
+## Contacts
 
-The app requests access to your device's contacts solely to let you associate a phone number with a gate address. Contact data is read locally on your device and is never transmitted to any server or third party.
-
-You can revoke this permission at any time through your device settings.
+The app does not request access to your contacts. When you save a gate address, you choose a contact with the system contact picker; the app receives only the name and phone number you select. This information is used solely to associate a phone number with a gate address and is never transmitted to any server or third party.
 
 ## Data Storage
 
-Saved gate addresses (including the associated contact name and phone number) are stored locally on your device using on-device storage. This data is never uploaded, synced, or shared. You can delete it at any time from within the app.
+Saved gate addresses (including the associated contact name and phone number) are stored locally on your device. This data is never uploaded, synced, or shared. You can delete it at any time from within the app.
 
 ## No Tracking
 
